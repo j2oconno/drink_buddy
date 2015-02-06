@@ -1,3 +1,11 @@
+.front {
+    border-style: solid;
+    border-width: 3px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
 .container {
 	min-width: 1000px;
     max-width: 1200px;
