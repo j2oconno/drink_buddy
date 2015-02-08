@@ -1,16 +1,16 @@
 @font-face {
     font-family: MainLogoFont;
-    src: url("C:/COGS120/introHCII/drink_buddy/static/fonts/KaushanScript-Regular.otf") format("opentype");
+    src: url("../fonts/KaushanScript-Regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: ChooseFont;
-    src: url("C:/COGS120/introHCII/drink_buddy/static/fonts/Infinity.ttf") format("opentype");
+    src: url("../fonts/Infinity.ttf") format("opentype");
 }
 
 @font-face {
     font-family: FrontBoxFont;
-    src: url("C:/COGS120/introHCII/drink_buddy/static/fonts/PoiretOne-Regular.ttf") format("opentype");
+    src: url("../fonts/PoiretOne-Regular.ttf") format("opentype");
 }
 
 .MainLogo{
@@ -26,10 +26,10 @@
 }
 
 body {
-    background-image: url("C:/COGS120/introHCII/drink_buddy/static/images/MAIN-Background.jpg");
+    background-image: url("../images/MAIN-Background.jpg");
 }
 
-.front {
+.frontbox {
     background-color: #FFFFFF;
     opacity: 0.8;
 
