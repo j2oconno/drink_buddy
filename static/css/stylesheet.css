@@ -25,10 +25,6 @@
     color: #FFFFFF;
 }
 
-.fronttext{
-    font-family: FrontBoxFont;
-}
-
 body {
     background-image: url("C:/COGS120/introHCII/drink_buddy/static/images/MAIN-Background.jpg");
 }
@@ -52,6 +48,8 @@ a:link {
 }
 
 .frontlink{
+    font-family: FrontBoxFont;
+    font-weight: 500;
     vertical-align: bottom;
     color: #000000;
 }
