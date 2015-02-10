@@ -25,6 +25,34 @@
     color: #FFFFFF;
 }
 
+.jumbotron {
+    position: relative;
+    background: none;
+}
+
+.jumbotron:after {
+     content:"";
+     background: url("../images/moodback.jpg");
+     opacity: 0.9;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     background-repeat: no-repeat; 
+     background-position: center;
+     background-size: 100%;
+     position: absolute;
+     z-index: -1;   
+}
+
+.jumbotron p{
+    font-family: ChooseFont;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    hover: none;
+}
+
 .indexbackground {
     background-image: url("../images/background2.jpg");
     background-repeat: no-repeat; 
