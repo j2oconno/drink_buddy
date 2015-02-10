@@ -1,24 +1,62 @@
-.front {
-    border-style: solid;
-    border-width: 2px;
-    max-width: 200px;
-    max-height: 200px;
-    margin-left: auto;
-    margin-right: auto;
+@font-face {
+    font-family: MainLogoFont;
+    src: url("../fonts/KaushanScript-Regular.otf") format("opentype");
 }
 
+@font-face {
+    font-family: ChooseFont;
+    src: url("../fonts/Infinity.ttf") format("opentype");
+}
 
-.container {
-	min-width: 1000px;
-    max-width: 1200px;
+@font-face {
+    font-family: FrontBoxFont;
+    src: url("../fonts/PoiretOne-Regular.ttf") format("opentype");
+}
+
+.MainLogo{
+    font-family: MainLogoFont;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.ChooseHead{
+    font-family: ChooseFont;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+body {
+    background-image: url("../images/MAIN-Background.jpg");
+}
+
+.frontbox {
+    background-color: #FFFFFF;
+    opacity: 0.8;
+
+    border-style: none;
+    width: 200px;
+    height: 200px;
+    border-width: 2px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+a:link {
+    color: #000000;
+}
+
+.frontlink{
+    font-family: FrontBoxFont;
+    font-weight: 500;
+    vertical-align: bottom;
+    color: #000000;
 }
 
 h1, h2, h3 {
 	text-align: center;
 }
-
 
 .bottlediv {
     width: 20%;
@@ -27,8 +65,6 @@ h1, h2, h3 {
     margin-top: 10px;
     margin-bottom: 20px;
 }
-
-
 
 .bottledivTitle {
     text-align: center;
