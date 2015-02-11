@@ -71,7 +71,7 @@
 }
 
 body {
-    background-color: #111333;
+    background-color: #FFFFFF;
 }
 
 .moodbackground {
@@ -114,7 +114,7 @@ OLD frontbox end }*/
     position: relative;
     width: 50%;
     overflow: hidden;
-    background: #FFFFFF;
+    background: #C0C0C0;
     opacity: 0.9;
     margin: 10px;
     margin-left: auto;
