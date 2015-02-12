@@ -70,6 +70,88 @@
 }
 */
 
+.robroy {
+    float:left;
+    margin:0px;
+    width:60px;
+    height:50px;
+    background:url('../images/romantic/robroy.png');
+    background-size:100% 100%;
+}
+
+
+
+.cam  {
+    float:left;
+    margin:0px;
+    width:100px;
+    height:10px;
+    background:url('../images/romantic/campariipaspritzer.png');
+    background-size:100% 100%;
+}
+
+.cosmo {
+    float:left;
+    margin:0px;
+    width:10px;
+    height:20px;
+    background:url('../images/romantic/cosmopolitan.jpg');
+    background-size:100% 100%;
+}
+
+
+.cranberry {
+    float:left;
+    margin:0px;
+    width:10px;
+    height:20px;
+    background:url('../images/romantic/cranberryvodka.jpg');
+    background-size:100% 100%;
+} 
+
+
+.pears {
+    float:left;
+    margin:0px;
+    width:10px;
+    height:20px;
+    background:url('../images/romantic/pearsmartini.jpg');
+    background-size:100% 100%;
+}
+
+
+
+.redlady {
+    float:left;
+    margin:0px;
+    width:10px;
+    height:20px;
+    background:url('../images/romantic/redlady.jpg');
+    background-size:100% 100%;
+}
+
+
+
+.mixedbase{
+    float:left;
+    margin:0px;
+    width:10px;
+    height:20px;
+    background:url('../images/romantic/mixedbase.jpg');
+    background-size:100% 100%;
+}
+
+
+
+.tequila {
+    float:left;
+    margin:0px;
+    width:10px;
+    height:20px;
+    background:url('../images/romantic/tequiladrink.jpg');
+    background-size:100% 100%;
+}
+
 .indexbackground{
     background: url("../images/background2.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
