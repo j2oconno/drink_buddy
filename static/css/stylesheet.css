@@ -57,6 +57,8 @@
     font-family: Verdana;
     font-weight: bold;
     text-align: center;
+    vertical-align: center;
+    font-size:17pt;
     hover: none;
 }
 
