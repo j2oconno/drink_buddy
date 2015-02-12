@@ -248,6 +248,11 @@ h1, h2, h3 {
 	text-align: center;
 }
 
+
+h4 {
+    text-align: center;
+}
+
 .bottlediv {
     width: 20%;
     height: inherit;
