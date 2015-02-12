@@ -33,7 +33,7 @@
 .jumbotron:after {
      content:"";
      background: url("../images/moodback.jpg");
-     opacity: 0.6;
+     opacity: 0.8;
      top: 0;
      left: 0;
      bottom: 0;
