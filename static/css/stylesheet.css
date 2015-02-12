@@ -35,13 +35,13 @@
 .jumbotron {
     position: relative;
     background: none;
-    margin:0px;
+    margin: 0px;
 }
 
 .jumbotron:after {
      content:"";
-     background: url("../images/moodback.jpg");
-     opacity: 0.8;
+     background-image: url("../images/moodback.jpg");
+     opacity: 0.7;
      top: 0;
      left: 0;
      bottom: 0;
@@ -54,10 +54,9 @@
 }
 
 .jumbotron p{
-    font-family: ChooseFont;
+    font-family: Verdana;
     font-weight: bold;
     text-align: center;
-    color: #FFFFFF;
     hover: none;
 }
 
