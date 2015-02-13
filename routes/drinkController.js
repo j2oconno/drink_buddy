@@ -4,6 +4,6 @@ var direction = require("../midmint_dir.json")
 exports.drink = function(req, res){
 	console.log(ingredient);
 	console.log(direction);
-	res.render('midnight_mint',ingredient,direction);
+	res.render('MidnightMint',ingredient,direction);
 }
 
