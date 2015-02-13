@@ -35,7 +35,7 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get("/romantic", recipesController.recipes);
+app.get("/recipes/:mood", recipesController.recipes);
 // Example route
 // app.get('/users', user.list);
 

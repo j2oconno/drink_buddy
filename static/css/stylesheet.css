@@ -71,7 +71,8 @@
 }
 */
 
-.vodka5 {
+/* Start Hard coded boxes */
+/*.vodka5 {
     float:left;
     margin:0px;
     width:10px;
@@ -154,7 +155,8 @@
     height:20px;
     background:url('../images/romantic/tequiladrink.jpg');
     background-size:100% 100%;
-}
+}*/
+/* End Hard coded boxes */
 
 .indexbackground{
     background: url("../images/background2.jpg") no-repeat center center fixed; 
@@ -181,19 +183,36 @@ body {
     background-position: center;
 }
 
-/*.OLD frontbox {
-    background-color: #FFFFFF;
+.frontbox {
+    /*background-color: #FFFFFF;*/
+    position: relative;
     opacity: 0.9;
-
-    border-style: none;
-    width: 200px;
-    height: 200px;
-    border-width: 2px;
-    margin-left: auto;
+    padding:5px 5px 5px 5px;
+/*    margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
-OLD frontbox end }*/
+    margin-bottom: 10px;
+    margin-top: 10px;*/
+    border-style: solid;
+    border-width: 2px;
+    width:60%;
+    height: 70%;
+}
+
+.frontcontent{
+    width:60%;
+    height: 70%;
+    border-style: solid;
+    border-width: 2px;
+}
+
+@media (max-width:767px) {
+    .frontbox {
+    /*background-color: #FFFFFF;*/
+    opacity: 0.9;
+    width:150px;
+    height: 250px;
+    }
+}
 
 /*FRONTBOX NEW START*/
 
@@ -207,7 +226,6 @@ OLD frontbox end }*/
 .square-box{
     position: relative;
     width: 60%;
-    overflow: hidden;
     background: #C0C0C0;
     opacity: 0.9;
     margin: 10px;
@@ -249,13 +267,8 @@ a:link {
     color: #000000;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	text-align: center;
-}
-
-
-h4 {
-    text-align: center;
 }
 
 .bottlediv {
