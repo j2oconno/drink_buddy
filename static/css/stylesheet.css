@@ -76,8 +76,9 @@
     margin:0px;
     width:10px;
     height:20px;
-    background:url('../images/romantic/vodka5.png');
+    background:url('../images/romantic/midnight-mint.png');
     background-size:100% 100%;
+    background-color: white;
 }
 
 
@@ -129,6 +130,7 @@
     height:20px;
     background:url('../images/romantic/redlady.jpg');
     background-size:100% 100%;
+    background-color: white;
 }
 
 
@@ -138,8 +140,9 @@
     margin:0px;
     width:10px;
     height:20px;
-    background:url('../images/romantic/mixedbase.jpg');
+    background:url('../images/romantic/orange-bliss.png');
     background-size:100% 100%;
+    background-color: white;
 }
 
 
