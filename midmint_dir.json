@@ -1,0 +1,16 @@
+{
+	"directions" : [
+			{
+				"name" : "Rim a cocktail glass with sugar syrup"
+			},
+			{
+				"name" : "Then dip into chocolate flakes or powder"
+			},
+			{
+				"name" : "Add ingredients into a shaker with ice"
+			},
+			{
+				"name" : "Shake well then strain into the cocktail glass."
+			}
+	]
+}
