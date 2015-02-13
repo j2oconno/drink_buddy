@@ -10,6 +10,7 @@ var handlebars = require('express3-handlebars')
 
 var recipesController = require("./routes/recipesController")
 var moodController = require("./routes/moodController")
+var drinkController = require("./routes/drinkController")
 // Example route
 // var user = require('./routes/user');
 
@@ -38,6 +39,7 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get("/recipes/:mood", recipesController.recipes);
 app.get("/mood", moodController.mood);
+app.get("/recipes/romantic/MidnightMint", drinkController.drink);
 // Example route
 // app.get('/users', user.list);
 
