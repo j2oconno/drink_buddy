@@ -1,7 +1,7 @@
-var recipes = require("../recipes.json")
+var mood = require("../mood.json")
 
-exports.recipes = function(req, res){
-	console.log(recipes);
-	var mood = req.params.mood;
-	res.render('recipe',recipes[mood]);
+exports.mood = function(req, res){
+	console.log(mood);
+	res.render('mood',mood);
+	console.log(mood);
 }

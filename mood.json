@@ -1,0 +1,22 @@
+{
+	"mood" : [
+			{
+				"name" : "romantic"
+			},
+			{
+				"name" : "manly"
+			},
+			{
+				"name" : "celebratory"
+			},
+			{
+				"name" : "relax and chill"
+			},
+			{
+				"name" : "introspective"
+			},
+			{
+				"name" : "reckless"
+			}
+	]
+}
