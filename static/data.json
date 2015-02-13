@@ -1,16 +1,16 @@
 {
 	"recipes": [
 		{
-			"name": "vodka cranberry",
-			"Ingredients": "yum",
-			"How to mix": "yeah",
+			"drink name": "vodka cranberry",
+			"ingredients": "yum",
+			"direction": "yeah",
 			"imageURL": "#"
 		},
 
 		{
-			"name": "Campari Ipa Spritzer",
-			"Ingredients": "yum",
-			"How to mix": "yeah",
+			"drink name": "Mojito",
+			"ingredients": "yum",
+			"direction": "yeah",
 			"imageURL": "#"
 		}
 
