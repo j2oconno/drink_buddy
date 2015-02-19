@@ -222,6 +222,7 @@ body {
     color: #000000;
 }*/
 
+
 .square-box{
     position: relative;
     width: 60%;
@@ -247,6 +248,14 @@ body {
     font-weight: 500;
     font-size: 16pt;
 }
+
+#square-image{
+    img.resize{
+    max-width:540px; /* you can use % */
+    height: auto;
+}
+}
+
 .square-content div {
    display: table;
    width: 100%;
