@@ -4,7 +4,7 @@
 		"mood_name" : "romantic",
 		"recipes" : [
 			{
-				"name" : "MidnightMint",
+				"name" : "Midnight Mint",
 				"image" : "/images/romantic/midnight-mint.png",
 				"directions" : [
 				{
@@ -29,6 +29,20 @@
 				},
 				{
 					"ingre" : "3/4 oz Double Cream"
+				}
+				]
+			},
+			{
+				"name" : "Raspberry Bellini",
+				"image" : "/images/romantic/raspberrybellini.png",
+				"directions" : [
+				{
+						"dir" : "Blend the raspberries and sugar in a food processor or blender until pureed"
+				}
+				],
+				"ingredients" : [
+				{
+					"ingre" : "1 bag frozen, unsweetened raspberries, thawed"
 				}
 				]
 			}

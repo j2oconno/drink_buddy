@@ -39,7 +39,8 @@ if ('development' == app.get('env')) {
 // Add routes here
 // app.get("/mood/:mood", recipesController.recipes);
 app.get("/mood/:mood", drinkController.view);
-app.get("/mood", moodController.mood);
+// app.get("/mood", moodController.mood);
+app.get("/mood", drinkController.test);
 app.get("/mood/:mood/:recipe", drinkController.drink);
 // Example route
 // app.get('/users', user.list);
