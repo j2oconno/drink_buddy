@@ -52,7 +52,7 @@
 <!-- START BANNER -->
 <div class="jumbotron">
   <div class="container">
-    <p class="ChooseHead">Recipes for Romance</p>
+    <p class="ChooseHead">Recipes for {{mood_name}}</p>
   </div>
 </div>
 <!-- END BANNER -->
@@ -64,7 +64,7 @@
       {{#each recipes}}
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
           <div class="frontbox">
-          <a href="../Mojito.html">
+          <a href="/mood/{{../mood_name}}/{{name}}">
             <div class="frontcontent">
                   <img src="{{image}}" class = "img-responsive img-rounded">
           </a>

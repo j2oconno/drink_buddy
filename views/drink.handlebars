@@ -60,19 +60,19 @@
 
 	<div class="container">
 		<div>
-			<p><h3>Midnight Mint Recipe</h3></p>
-				<img src="./static/images/romantic/midnight-mint.png" alt="Picture of Your Drink!">
+			<p><h3>{{name}} Recipe</h3></p>
+				<img src="{{image}}">
 			
 			<h5>INGREDIENTS</h5>
 				<ol class="ingredients">
 					{{#each ingredient}}
-					<li>{{ingredient}}</li>
+					<li>{{ingr}}</li>
 					{{/each}}
             	</ol>
 			<h5>DIRECTIONS</h5>
 				<ol class="directions">
-					{{#each direction}}
-					<li>{{direction}}</li>
+					{{#each directions}}
+					<li>{{dir}}</li>
 					{{/each}}
             	</ol>
 		</div>
