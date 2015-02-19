@@ -6,11 +6,11 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express3-handlebars');
 
-var recipesController = require("./routes/recipesController")
-var moodController = require("./routes/moodController")
-var drinkController = require("./routes/drinkController")
+var recipesController = require("./routes/recipesController");
+var moodController = require("./routes/moodController");
+var drinkController = require("./routes/drinkController");
 // Example route
 // var user = require('./routes/user');
 
@@ -38,9 +38,9 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 // app.get("/mood/:mood", recipesController.recipes);
-app.get("/mood/:mood", drinkController.view)
+app.get("/mood/:mood", drinkController.view);
 app.get("/mood", moodController.mood);
-app.get("/recipes/:mood/:recipe", drinkController.drink);
+app.get("/mood/:mood/:recipe", drinkController.drink);
 // Example route
 // app.get('/users', user.list);
 
