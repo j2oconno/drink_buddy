@@ -251,7 +251,7 @@ body {
 
 #square-image{
     img.resize{
-    max-width:540px; /* you can use % */
+    max-width:20px; /* you can use % */
     height: auto;
 }
 }

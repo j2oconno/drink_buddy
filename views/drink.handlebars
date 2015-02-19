@@ -7,11 +7,11 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     	<!-- Bootstrap -->
-    	<link href="css/bootstrap.min.css" rel="stylesheet">
-    	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    	<link href="css/stylesheet.css" rel="stylesheet">
+    	<link href="/css/bootstrap.min.css" rel="stylesheet">
+    	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    	<link href="/css/stylesheet.css" rel="stylesheet">
 
-    	<title>Drink Buddy - Mojito Recipe</title>
+    	<title>Drink Buddy - {{name}} Recipe</title>
 </head>
 
 <body>
@@ -65,8 +65,8 @@
 			
 			<h5>INGREDIENTS</h5>
 				<ol class="ingredients">
-					{{#each ingredient}}
-					<li>{{ingr}}</li>
+					{{#each ingredients}}
+					<li>{{ingre}}</li>
 					{{/each}}
             	</ol>
 			<h5>DIRECTIONS</h5>
@@ -98,9 +98,9 @@
 			</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="js/jquery-1.11.0.js"></script>
-	<script src="js/bootstrap.js"></script>
-  	<script src="js/bootstrap.min.js"></script>
+	<script src="/js/jquery-1.11.0.js"></script>
+	<script src="/js/bootstrap.js"></script>
+  	<script src="/js/bootstrap.min.js"></script>
   	<!-- Include all compiled plugins (below), or include individual files as needed -->
   	<script type="text/javascript" src="/scripts/handlebars-0.9.0.pre.4.js" />
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
