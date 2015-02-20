@@ -298,3 +298,16 @@ h1, h2, h3, h4 {
 .recommendBox {
     margin-left: 400px;
 }
+
+
+
+media="all" span.selected .flag {
+position: absolute;
+display: block;
+background: url(http://www.glassful.com/skin/frontend/enterprise/glassful/images/checkbox-corner.png);
+width: 79px;
+height: 79px;
+right: 7px;
+top: 7px;
+z-index: 9;
+}
