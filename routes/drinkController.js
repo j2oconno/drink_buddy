@@ -1,4 +1,6 @@
 var drinks = require("../drinks.json");
+var category = require("../by_category.json");
+
 
 exports.mood = function(req, res){
 	var drinkMood = {mood: []};
@@ -21,11 +23,14 @@ exports.mood = function(req, res){
 			}
 		}
 	}
-	res.render('mood',drinkMood)
+		console.log(drinkMood);
+
+	res.render('mood',drinkMood);
 }
 
 exports.view = function(req, res){
 	var thismood = req.params.mood;
+	console.log(thismood);
 	//pass recipe template mood, drink names, and images
 	//First pull out all the drinks matching thismood
 	var moodDrinks = {tag: thismood,drink:[]};
@@ -53,4 +58,9 @@ exports.drink = function(req, res){
 		}
 	}
 	res.render('drink',mainDrink);
+}
+
+exports.index = function(req, res){
+	console.log(category);
+	res.render('index', category);
 }
