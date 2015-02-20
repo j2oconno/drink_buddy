@@ -4,8 +4,8 @@
             "name": "Midnight Mint",
             "mood": "romantic",
             "occasions": [
-                "Birthday",
-                "new year's eve"
+                "birthday",
+                "new years eve"
             ],
             "main spirit": [
                 "Irish Cream",
@@ -43,8 +43,8 @@
             "name": "Raspberry Bellini",
             "mood": "romantic",
             "occasions": [
-                "Birthday",
-                "new year's eve"
+                "birthday",
+                "new years eve"
             ],
             "main spirit": [
                 "Irish Cream",
@@ -67,8 +67,9 @@
             "name": "SideCar",
             "mood": "manly",
             "occasions": [
-                "Birthday",
-                "new year's eve"
+                "birthday",
+                "new years eve",
+                "girls night out"
             ],
             "main spirit": [
                 "Triple Sec",
