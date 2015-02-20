@@ -70,36 +70,32 @@
 
 
 <!-- START DRINK RECIPE BOXES-->
-<div class="container">
+<div class="container recipebox">
 
   <div class="row"> 
+    <div class="col-xs-12 col-md-8">
 
-
-      {{ #each recipes }}
+      <div class="row">
         <div class="col-xs-6 col-sm-4">
-          <a href="#">
-            <div class='square-box'>
-              <div class='square-content'>
-                <div>
-                  <img src="{{ image }}">
+          {{ #each recipes }}
+            <a href="#">
+              <div class='square-box'>
+                <div class='square-content'>
+                  <div>
+                    <span><img id="square-image" src="{{ image }}"></span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
-
-          <h4>{{ name }}</h4>
+            </a>
+            <h4>{{ name }}</h4>
+          {{ /each }}
         </div>
-      {{ /each }}
-
+      </div>
+    </div>
   </div>
-
-
- 
-
-<!-- JSON TEST -->
-
-
 </div>
+
+
 <!-- END DRINK RECIPE BOXES -->
 
 

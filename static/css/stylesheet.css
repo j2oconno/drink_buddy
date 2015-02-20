@@ -222,6 +222,7 @@ body {
     color: #000000;
 }*/
 
+
 .square-box{
     position: relative;
     width: 60%;
@@ -247,6 +248,14 @@ body {
     font-weight: 500;
     font-size: 16pt;
 }
+
+#square-image{
+    img.resize{
+    max-width:20px; /* you can use % */
+    height: auto;
+}
+}
+
 .square-content div {
    display: table;
    width: 100%;
@@ -288,4 +297,17 @@ h1, h2, h3, h4 {
 
 .recommendBox {
     margin-left: 400px;
+}
+
+
+
+media="all" span.selected .flag {
+position: absolute;
+display: block;
+background: url(http://www.glassful.com/skin/frontend/enterprise/glassful/images/checkbox-corner.png);
+width: 79px;
+height: 79px;
+right: 7px;
+top: 7px;
+z-index: 9;
 }
