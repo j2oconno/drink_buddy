@@ -40,7 +40,8 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 // app.get("/mood/:mood", recipesController.recipes);
-app.get("/add", add.addFavorite);
+app.get("/add/:name", add.addFavorite);
+app.get("/favorite", add.showFavorite);
 app.get("/", drinkController.index);
 app.get("/mood", drinkController.mood);
 app.get("/mood/:mood", drinkController.view);
