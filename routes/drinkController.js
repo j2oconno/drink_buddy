@@ -48,6 +48,7 @@ exports.view = function(req, res){
 exports.drink = function(req, res){
 	var thismood = req.params.mood;
 	var thisdrink = req.params.recipe;
+	console.log(thisdrink);
 	//---------------------Start new logic using the drinks.json
 	//Want to pass the drink object
 	var mainDrink = {};

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head> 
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
     	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     	<!-- Bootstrap -->
-    	<link href="css/bootstrap.min.css" rel="stylesheet">
-    	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    	<link href="css/stylesheet.css" rel="stylesheet">
+    	<link href="/css/bootstrap.min.css" rel="stylesheet">
+    	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    	<link href="/css/stylesheet.css" rel="stylesheet">
 
-    	<title>Mood Board</title>
-    </head>
+    	<title>Drink Buddy - {{name}} Recipe</title>
+</head>
 
 <body>
-  <div class="moodbackground">
 
 <!-- NAVIGATION BAR -->
 
@@ -33,7 +33,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a class="navbar-brand" href="index.html">DrinkBuddy<span class="sr-only">(current)</span></a></li>
+        <li><a class="navbar-brand" href="/index.html">DrinkBuddy<span class="sr-only">(current)</span></a></li>
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
@@ -47,41 +47,35 @@
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-</nav>   
+</nav>
+
+  <!--   <div class="container">
+      <div class="starter-template">
+      </div>
+    </div> -->
+    <!-- /.container -->
+   
 <!-- END NAVIGATION BAR -->
-<!-- START BANNER -->
-<div class="jumbotron">
+
   <div class="container">
-    <p>Recipes by Mood</p>
-  </div>
-</div>
-<!-- END BANNER -->
-<!-- START MENU BOXES-->
-<div class="container">
-      
-    {{#each mood}}
-        <div class="row">  
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <a href="/mood/{{name}}">
-              <div class='square-box'>
-                <div class='square-content'>
-                  <h4>{{ name }}</h4>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
+    <h1>My Favorite Recipes</h1>
+    
+    {{#each drinks}}
+      <div class="drinks">
+          <img src="{{image}}">
+          <h3><a href="#" class="name">{{name}}</a> </h3> 
+          <p>{{description}}</p>
+      </div> 
     {{/each}}
-</div>
-<!-- END MENU BOXES -->
+  </div>    
 
-  <script src="js/jquery-1.11.0.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script type="text/javascript" src="/scripts/handlebars-0.9.0.pre.4.js" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/jquery-1.11.0.js"></script>
+	<script src="/js/bootstrap.js"></script>
+  	<script src="/js/bootstrap.min.js"></script>
+  	<!-- Include all compiled plugins (below), or include individual files as needed -->
+  	<script type="text/javascript" src="/scripts/handlebars-0.9.0.pre.4.js" />
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </body>
-
 </html>

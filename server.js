@@ -8,6 +8,8 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
 
+var add = require ('./routes/add')
+
 var recipesController = require("./routes/recipesController");
 var drinkController = require("./routes/drinkController");
 var occasionController = require("./routes/occasionController");
@@ -38,6 +40,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 // app.get("/mood/:mood", recipesController.recipes);
+app.get("/add", add.addFavorite);
 app.get("/", drinkController.index);
 app.get("/mood", drinkController.mood);
 app.get("/mood/:mood", drinkController.view);
