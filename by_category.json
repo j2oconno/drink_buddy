@@ -7,7 +7,7 @@
 		{
 			"id" : "occasion",
 			"name" : "by occasion"
-		}
+		},
 		{
 			"id" : "favorite",
 			"name" : "my favorites"
