@@ -3,6 +3,13 @@
 		"recipes" : [
 			{
 				"name" : "MidnightMint",
+				"mood" : "romantic",
+				"occasions" : ["Girl's Night"],
+				"main spirit": [
+								"Irish Cream",
+                				"White Creme de Menthe"
+            					],
+            	"time of day" : "evening",
 				"image" : "/images/romantic/midnight-mint.png"
 			},
 			{

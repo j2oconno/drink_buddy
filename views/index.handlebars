@@ -59,52 +59,53 @@
       <div><h3 class="ChooseHead">Find a Recipe:</h3></div>
 
       <div class="row"> 
+        {{#each by_what}}
           <div class="col-xs-6">
               <div class='square-box'>
-                <a href="mood.html">
+                <a href="/{{id}}">
                 <div class='square-content'>
-                  <div><span>by mood</span></div>
+                  <div><span>{{name}}</span></div>
                 </div>
+               </a>
               </div>
-            </a>
           </div>
+        {{/each}}
 
+<!-- Favorite's box -->
           <div class="col-xs-6">
               <div class='square-box'>
-                <a href="/occasion">
+                <a href="/favorite">
                 <div class='square-content'>
-                  <div><span>by occasion</span></div>
+                  <div><span>your favorites</span></div>
                 </div>
+               </a>
               </div>
-            </a>
           </div>
       </div>
-
-
-      <div class="row"> 
-          <div class="col-xs-6">
-            <div class='square-box'>
-              <a href="mainspirit.html">
-                <div class='square-content'>
-                  <div><span>by main spirit</span></div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-xs-6">
-              <div class='square-box'>
-                <a href="timeofday.html">
-                  <div class='square-content'>
-                  <div><span>by time of day</span></div>
-                </div>
-              </div>
-            </a>
-          </div>
-      </div>
-
+    </div>
 </div>
+
 <!-- END MENU BOXES-->
+
+
+<!-- START "ADD TO FAVORITES" BUTTON-->
+<script>
+(function() {
+        var _w = document.createElement("script"); _w.type = "text/javascript"; _w.async = true;
+        _w.src = "http://button.wanttt.com/button/script/";
+        var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(_w, s);
+})();
+</script>
+<a href="http://wanttt.com/want/initial_popup/"
+data-merchant_name="ESCAPED_MERCHANT_NAME"
+data-title="ESCAPED_PRODUCT_NAME"
+data-price="PRODUCT_PRICE"
+data-image_url="HIGH_RESOLUTION_PRODUCT_IMAGE_URL"
+data-count="false"
+data-style="wb2" data-page_source="PRODUCT" class="wantButton"></a>
+
+<!-- END "ADD TO FAVORITES" BUTTON-->
+
 
 
 <!-- START FOOTER -->

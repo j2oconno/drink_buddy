@@ -1,0 +1,16 @@
+{
+	"by_what" : [
+		{
+			"id" : "mood",
+			"name" : "by mood"
+		},
+		{
+			"id" : "occasion",
+			"name" : "by occasion"
+		}
+		{
+			"id" : "favorite",
+			"name" : "my favorites"
+		}
+	]
+}

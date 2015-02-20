@@ -9,7 +9,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars');
 
 var recipesController = require("./routes/recipesController");
-var moodController = require("./routes/drinkController");
+var drinkController = require("./routes/drinkController");
 var occasionController = require("./routes/occasionController");
 // Example route
 // var user = require('./routes/user');
@@ -38,9 +38,10 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 // app.get("/mood/:mood", recipesController.recipes);
-app.get("/mood", moodController.mood);
-app.get("/mood/:mood", moodController.view);
-app.get("/mood/:mood/:recipe", moodController.drink);
+app.get("/", drinkController.index);
+app.get("/mood", drinkController.mood);
+app.get("/mood/:mood", drinkController.view);
+app.get("/mood/:mood/:recipe", drinkController.drink);
 app.get("/occasion", occasionController.view);
 app.get("/occasion/:occa", occasionController.select);
 app.get("/occasion/:occa/:recipe", occasionController.drink);
