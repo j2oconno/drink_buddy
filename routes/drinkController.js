@@ -1,12 +1,9 @@
-var data = require("../midmint.json");
 var drinks = require("../drinks.json");
 
-exports.test = function(req, res){
-	// var drinkmood = {mood: [{name: "testmood"}]};
+exports.mood = function(req, res){
 	var drinkMood = {mood: []};
 	var dupl = 0;
-	var iii = 1;
-	// console.log("Before Loop!")
+	var iii = 1; //index of passing object
 	//Loop creates object of strings of moods
 	for(i=0; i < drinks["drinks"].length; i++){//Loop through all drinks
 		dupl = 0;
@@ -14,8 +11,8 @@ exports.test = function(req, res){
 		drinkMood.mood[0]={"name" : drinks["drinks"][i]["mood"]};
 		else {//Loop through past moods to ensure no overlap with current drink's mood
 			// console.log("Got into else and length is: " + drinkMood.mood.length);
-			for(iii=0; iii < drinkMood.mood.length; iii++){
-				if(drinkMood.mood[iii]["name"] === drinks["drinks"][i]["mood"]){
+			for(ii=0; ii < drinkMood.mood.length; ii++){
+				if(drinkMood.mood[ii]["name"] === drinks["drinks"][i]["mood"]){
 					dupl = 1;
 				}
 			}
@@ -23,63 +20,29 @@ exports.test = function(req, res){
 				drinkMood.mood[iii++] = {"name" : drinks["drinks"][i]["mood"]};
 			}
 		}
-		// console.log("dupl is: " + dupl);
 	}
-	// console.log("Got HERE!")
-	// console.log(iii);
-	// console.log(drinkMood);
-	// console.log(drinkMood.mood.length);
-	res.render('mood1',drinkMood)
-
+	res.render('mood',drinkMood)
 }
 
 exports.view = function(req, res){
 	var thismood = req.params.mood;
-	// var moods = data["moods"];
-	// for (i=0;i<moods.length; i++){
-	// 	if (moods[i]["mood_name"] === thismood){
-	// 	var ind = i;
-	// };
-	// }
-	// res.render('recipe',moods[ind]);
-	//---------------------Start new logic using the drinks.json
-	//pass recipe template mood, drink names and images
+	//pass recipe template mood, drink names, and images
 	//First pull out all the drinks matching thismood
-	var moodDrinks = {mood: thismood,drink:[]};
+	var moodDrinks = {tag: thismood,drink:[]};
 	var ii = 0;
 	//This loop creates object of all drinks of thismood
 	for(i=0;  i < drinks["drinks"].length; i++){
 		if (drinks["drinks"][i]["mood"] === thismood){
-			moodDrinks.drink[ii] = drinks["drinks"][i];
-			ii++;
+			moodDrinks.drink[ii++] = drinks["drinks"][i];
 		}
 	}
 	console.log(moodDrinks);
-	res.render('recipe1',moodDrinks);
+	res.render('select',moodDrinks);
 }
 
 exports.drink = function(req, res){
-	var moods = data["moods"];
 	var thismood = req.params.mood;
 	var thisdrink = req.params.recipe;
-	//This loop finds the object with 'mood_name' = 'thismood'
-	//i.e. finds the object of our mood
-	for (i=0;i<moods.length; i++){
-		if (moods[i]["mood_name"] === thismood){
-		var ind1 = i;
-	};
-	}
-	//This loop finds the object with the "name" = 'thisdrink'
-	//i.e. finds the object of our drink
-	for (ii=0;ii<moods[ind1]["recipes"].length; ii++){
-		if (moods[ind1]["recipes"][ii]["name"] === thisdrink){
-		console.log("Got HERE AGAIN! OMG!!")
-		var ind2 = ii;
-	};
-	}
-	console.log(moods[ind1]["recipes"][0]["name"]);
-	// res.render('drink',moods[ind1]["recipes"][ind2]);
-
 	//---------------------Start new logic using the drinks.json
 	//Want to pass the drink object
 	var mainDrink = {};
@@ -89,5 +52,5 @@ exports.drink = function(req, res){
 			mainDrink = drinks["drinks"][i];
 		}
 	}
-	res.render('drink1',mainDrink);
+	res.render('drink',mainDrink);
 }
