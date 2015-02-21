@@ -51,27 +51,37 @@
 
 <!-- END NAVIGATION BAR -->
 
-	<div class="container">
-		<div class = "row">
-      <div class ="sx-col-6">
+<div class="container">
+	<div class = "row">
+    <div class ="col">
 
-        <p><h3>{{name}} Recipe</h3></p>
-  				<img  class = "img-responsive" src="{{image}}">
-  			
-  			 <h5>INGREDIENTS</h5>
-  				  <ol class="ingredients">
-  					 {{#each ingredients}}
-  					   <li>{{ingre}}</li>
-  					 {{/each}}
-            </ol>
-  			 <h5>DIRECTIONS</h5>
-  				  <ol class="directions">
-  					 {{#each directions}}
-  					   <li>{{dir}}</li>
-  					 {{/each}}
-            </ol>
+      <p><h3>{{name}} Recipe</h3></p>
 
-        <!-- ADD TO FAVORITES BUTTON-->
+        <div class="row">
+              <div class="col-xs-6">
+          				<img id="imagerecipe" class = "img-responsive" src="{{image}}">
+          		</div>
+
+              <div class="col-xs-6">
+          			 <h5>INGREDIENTS</h5>
+          				  <ol class="ingredients">
+          					 {{#each ingredients}}
+          					   <li>{{ingre}}</li>
+          					 {{/each}}
+                    </ol>
+          			 <h5>DIRECTIONS</h5>
+          				  <ol class="directions">
+          					 {{#each directions}}
+          					   <li>{{dir}}</li>
+          					 {{/each}}
+                    </ol>
+              </div>
+        </div>
+  	</div>
+	 </div>
+</div>
+
+  <!-- ADD TO FAVORITES BUTTON-->
         <div class="row">
           <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
             <a>
@@ -84,30 +94,32 @@
             <br><br>
           </div>
         </div>
-        <!--end ADD TO FAVORITES BUTTON-->
-            
-		  </div>
-	 </div>
-</div>
+  <!--end ADD TO FAVORITES BUTTON-->
+
 
   <div class="container">
 				<h3>Other drinks you may like</h3>
 					
-					<div class="recommendBox">	
-						<div>
-							<a href="#"><img src="/images/1.jpg" width="100px" alt="Image"></a>
-							<p><a href="#">Cosmopolitan</a></p>
+<div class="container">
+  <div class = "row">
+    <div class ="col">
+          
+      <div class="row">
+            <div class="col-xs-4">
+							<a href="#"><img src="/images/romantic/orange-bliss.png" width="100px" alt="Image"></a>
+							<p><a href="#">Orange Bliss</a></p>
 						</div>
-						<div>
-							<a href="#"><img src="/images/2.jpg" width="100px" alt="Image"></a>
-							<p><a href="#">Whiskey Sour</a></p>
+						<div class="col-xs-4">
+							<a href="#"><img src="/images/romantic/pearsmartini.jpg" height="130px" alt="Image"></a>
+							<p><a href="#">Pears Martini</a></p>
 						</div>
-						<div>
-							<a href="#"><img src="/images/3.jpg" width="100px" alt="Image"></a>
-							<p><a href="#">Delicious Bloody Mary</a></p>
+						<div class="col-xs-4">
+							<a href="#"><img src="/images/romantic/campariipaspritzer.png" width="65px" alt="Image"></a>
+							<p><a href="#">Campari Ipa Spritzer</a></p>
 						</div>
 					</div>
 			</div>
+</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/jquery-1.11.0.js"></script>
