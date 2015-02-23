@@ -9,6 +9,14 @@
 			"name" : "by occasion"
 		},
 		{
+			"id" : "main spirit",
+			"name" : "main spirit"
+		},
+		{
+			"id" : "time of day",
+			"name" : "time of day"
+		},
+		{
 			"id" : "favorite",
 			"name" : "my favorites"
 		}

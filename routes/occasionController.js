@@ -65,6 +65,6 @@ exports.drink = function(req,res){
 			mainDrink = drinks["drinks"][i];
 		}
 	}
-	res.render('drink1',mainDrink);
+	res.render('drink',mainDrink);
 
 }
