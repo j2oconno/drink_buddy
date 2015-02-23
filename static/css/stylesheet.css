@@ -13,12 +13,22 @@
     src: url("../fonts/PoiretOne-Regular.ttf") format("opentype");
 }
 
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
 @media (min-width: 1200px) {
   .container {
     width: 970px;
    }
 }
 
+#imagerecipe {
+    max-width:250px;
+}
 
 .MainLogo{
     font-family: MainLogoFont;
@@ -62,80 +72,6 @@
     hover: none;
 }
 
-/* OLD UNRESPONSIVE IMAGE
-.indexbackground {
-    background-image: url("../images/background2.jpg");
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-position: center;
-}
-*/
-
-/* Start Hard coded boxes */
-/*.vodka5 {
-    float:left;
-    margin:0px;
-    width:10px;
-    height:20px;
-    background:url('../images/romantic/midnight-mint.png');
-    background-size:100% 100%;
-    background-color: white;
-}
-
-
-
-.rasp  {
-    float:left;
-    margin:0px;
-    width:10px;
-    height:20px;
-    background:url('../images/romantic/raspberrybellini.png');
-    background-size:100% 100%;
-}
-
-.cosmo {
-    float:left;
-    margin:0px;
-    width:10px;
-    height:20px;
-    background:url('../images/romantic/cosmopolitan.jpg');
-    background-size:100% 100%;
-}
-
-
-.cranberry {
-    float:left;
-    margin:0px;
-    width:10px;
-    height:20px;
-    background:url('../images/romantic/cranberryvodka.jpg');
-    background-size:100% 100%;
-} 
-
-
-.pears {
-    float:left;
-    margin:0px;
-    width:10px;
-    height:20px;
-    background:url('../images/romantic/pearsmartini.jpg');
-    background-size:100% 100%;
-}
-
-
-
-.redlady {
-    float:left;
-    margin:0px;
-    width:10px;
-    height:20px;
-    background:url('../images/romantic/redlady.jpg');
-    background-size:100% 100%;
-    background-color: white;
-}
-
-
-
 .mixedbase{
     float:left;
     margin:0px;
@@ -146,8 +82,6 @@
     background-color: white;
 }
 
-
-
 .tequila {
     float:left;
     margin:0px;
@@ -155,7 +89,8 @@
     height:20px;
     background:url('../images/romantic/tequiladrink.jpg');
     background-size:100% 100%;
-}*/
+}
+
 /* End Hard coded boxes */
 
 .indexbackground{
@@ -183,85 +118,51 @@ body {
     background-position: center;
 }
 
-.frontbox {
-    /*background-color: #FFFFFF;*/
-    position: relative;
-    opacity: 0.9;
-    padding:0px 0px 0px 0px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
-/*    border-style: solid;*/
-    border-width: 0px;
-    width:60%;
-    height: 70%;
-}
-
-.frontcontent{
-    width:100%;
-    height:100%;
-/*    border-style: solid;*/
-    border-width: 2px;
-}
-
-/*@media (max-width:767px) {
-    .frontbox {
-    opacity: 0.9;
-    width:150px;
-    height: 250px;
-    }
-}*/
-
-/*FRONTBOX NEW START*/
-
-/*.frontlink{
-    font-family: FrontBoxFont;
-    font-weight: 500;
-    vertical-align: bottom;
-    color: #000000;
-}*/
-
-
 .square-box{
     position: relative;
     width: 60%;
     background: #C0C0C0;
     opacity: 0.9;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    height: 11em;
 }
-.square-box:before{
+
+/*.square-box:before{
     content: "";
     display: block;
     padding-top: 100%;
-}
+}*/
+
 .square-content{
-    position:  relative;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    color: #000000;
+    position:  absolute;
+    display: table-cell;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    /*color: #000000;*/
     font-family: FrontBoxFont;
     font-weight: 500;
     font-size: 16pt;
-    height: 70%;
+    height: 100%;
+    width: 100%;
 }
 
 #square-image{
     img.resize{
-    max-width:20px; /* you can use % */
-    height: auto;
+    max-width:60%; /* you can use % */
+    height: 70%;
 }
 }
 
-/*.square-content div {
+.square-content div {
    display: table;
    width: 100%;
    height: 100%;
-}*/
+}
+
 .square-content span {
     display: table-cell;
     text-align: center;
@@ -280,7 +181,7 @@ h1, h2, h3, h4 {
 	text-align: center;
 }
 
-.bottlediv {
+/*.bottlediv {
     width: 20%;
     height: inherit;
     float: left;
@@ -294,11 +195,9 @@ h1, h2, h3, h4 {
     line-height: 2;
     font-family: "Forum";
     font-size: 18px;
-}
+}*/
 
-.recommendBox {
-    margin-left: 400px;
-}
+
 
 
 
