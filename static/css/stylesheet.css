@@ -49,6 +49,14 @@
     box-shadow: none;
 }
 
+
+
+#user {
+    text-align: center; 
+    font-size:16pt;
+    margin-top:90px;
+}
+
 #imagerecipe {
     max-width:250px;
 }
