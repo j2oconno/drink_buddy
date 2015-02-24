@@ -1,24 +1,22 @@
+[
 {
-	"by_what" : [
-		{
-			"id" : "mood",
-			"name" : "by mood"
-		},
-		{
-			"id" : "occasion",
-			"name" : "by occasion"
-		},
-		{
-			"id" : "main spirit",
-			"name" : "main spirit"
-		},
-		{
-			"id" : "time of day",
-			"name" : "time of day"
-		},
-		{
-			"id" : "favorite",
-			"name" : "my favorites"
-		}
-	]
+	"link" : "mood",
+	"name" : "by mood"
+},
+{
+	"link" : "occasion",
+	"name" : "by occasion"
+},
+{
+	"link" : "main spirit",
+	"name" : "main spirit"
+},
+{
+	"link" : "time of day",
+	"name" : "time of day"
+},
+{
+	"link" : "favorite",
+	"name" : "my favorites"
 }
+]
