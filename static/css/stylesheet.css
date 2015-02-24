@@ -26,6 +26,29 @@
    }
 }
 
+
+@media(max-width:767px) {
+    .navbar .navbar-form {
+        width: 185px;
+        padding-left:0;
+        padding-right:0;
+    }
+}
+@media(min-width:768px) {
+    .navbar .navbar-form {
+        width: 250px;
+    }
+}
+.navbar .navbar-form {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 #imagerecipe {
     max-width:250px;
 }
@@ -260,17 +283,3 @@ h1, h2, h3, h4 {
     font-size: 18px;
 }
 
-
-
-
-
-media="all" span.selected .flag {
-position: absolute;
-display: block;
-background: url(http://www.glassful.com/skin/frontend/enterprise/glassful/images/checkbox-corner.png);
-width: 79px;
-height: 79px;
-right: 7px;
-top: 7px;
-z-index: 9;
-}
