@@ -49,6 +49,14 @@
     box-shadow: none;
 }
 
+
+
+#user {
+    text-align: center; 
+    font-size:16pt;
+    margin-top:90px;
+}
+
 #imagerecipe {
     max-width:250px;
 }
@@ -96,6 +104,36 @@
 }
 
 
+.paddedTable td {
+padding: 5px;
+}
+.main {
+font-family: Helvetica,Arial,sans-serif;
+font-size: 12pt;
+line-height: 20pt;
+color: #000000;
+}
+
+td, th {
+display: table-cell;
+vertical-align: inherit;
+}
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+ul, menu, dir {
+display: block;
+list-style-type: disc;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 10px;
+-webkit-padding-end:10px;
+}
 
 /*.footer {
     position: absolute;

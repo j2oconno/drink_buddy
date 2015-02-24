@@ -12,7 +12,7 @@
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/stylesheet.css" rel="stylesheet">
     <link href="css/loginstyle.css" rel="stylesheet">
-    <title> Log in panel </title>
+    <title> User profile </title>
 	</head>
 
   <body class="indexbackground">
@@ -47,64 +47,30 @@
 
 <!-- END NAVIGATION BAR -->
 
+
 <!-- START LOG IN PANEL-->
     <div class="container" id="loginpanel" style="margin-top:40px">
-		<div class="row">
-			<div class="col-sm-6 col-md-4 col-md-offset-4">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<i>Please sign in</i>
-					</div>
-					<div class="panel-body" style="height:200px;">
-						<form role="form" action="/user.html" method="get">
-							<fieldset>
-								<div class="row">
-								</div>
-								<div class="row">
-									<div class="col-sm-12 col-md-10  col-md-offset-1 ">
-										<div class="form-group">
-											<div class="input-group">
-												<span class="input-group-addon">
-													<i class="glyphicon glyphicon-user"></i>
-												</span> 
-												<input class="form-control" placeholder="Username" name="loginname" type="text" autofocus>
-											</div>
-										</div>
-										<div class="form-group">
-											<div class="input-group">
-												<span class="input-group-addon">
-													<i class="glyphicon glyphicon-lock"></i>
-												</span>
-												<input class="form-control" placeholder="Password" name="password" type="password" value="">
-											</div>
-										</div>
-                    <div>
-  										<a href="/user.html" onClick="">
-                          <button class="btn btn-lg btn-primary btn-block">Sign In</button>
-                      </a>
-									 </div>
-                </div>
-								</div>
-							</fieldset>
-						</form>
-					</div>
-					<div class="panel-footer ">
-						Don't have an account? <a href="signup.html" onClick="">Sign Up</a>
-					</div>
-                </div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-md-offset-4">
+        <div class="panel panel-default">
+          <div class="panel-heading"style="padding:10px;">
+            <i></i>
+          </div>
+            <div style="height:110px;" id="user"> 
+              <p><i>You have successfully logged in!</i></p>
+            </div>
+          <div class="panel-footer" style="padding:10px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 <!-- END LOG IN PANEL-->
-
-<!-- START FOOTER -->
-
-<!-- END FOOTER-->
 
     <script src="js/jquery-1.11.0.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	</body>
+  </body>
 </html>
