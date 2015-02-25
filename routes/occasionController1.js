@@ -30,41 +30,29 @@ exports.view = function(req, res){
 }
 
 exports.select = function(req,res){
-	var thisocca = req.params.occa;
-	//pass recipe template mood, drink names, and images
-	//First pull out all the drinks matching thisocca
-	var occaDrinks = {tag: thisocca, drinks:[]};
-	var i = 0;
-	//This loop creates object of all drinks of occasion thisocca
-	console.log(drinks["drinks"].length);
-	for(ii=0;  ii < drinks["drinks"].length; ii++){//Loop over all drinks
-		var len = drinks["drinks"][ii]["occasions"].length//length of this drinks "occasions"
-		console.log(ii);
-		console.log(drinks["drinks"][ii]["occasions"]);
-		for(iii=0; iii<len; iii++){//Loop over this drinks occasions
-			console.log(drinks["drinks"][ii]["occasions"][iii]);
-			if (drinks["drinks"][ii]["occasions"][iii] === thisocca){
-				console.log("Got into If statement");
-				occaDrinks.drink[i] = drinks["drinks"][ii];
-				i++;
+//Find all drinks with this occasion
+		var thisocc = req.params.occa;
+		console.log(thisocc);
+		models.Drink
+			.find({"occasions": thisocc})
+			.sort()
+			.exec(renderDrinksbyOccasion);
+			function renderDrinksbyOccasion(err,drinks){
+				console.log(drinks);
+				res.render("select",{"mainLink":"occasions", "tag" : thisocc, "drinks": drinks})
 			}
-		}
-	}
-	console.log(occaDrinks);
-	res.render('select',occaDrinks);
 }
 
 exports.drink = function(req,res){
 	var thisdrink = req.params.recipe;
-	//---------------------Start new logic using the drinks.json
+	//---------------------Start new logic using mongooseDB
 	//Want to pass the drink object
-	var mainDrink = {};
-	//This loop creates object of this drink of thismood
-	for(i=0;  i < drinks["drinks"].length; i++){
-		if (drinks["drinks"][i]["name"] === thisdrink){
-			mainDrink = drinks["drinks"][i];
+	models.Drink
+		.find({"name":thisdrink})
+		.sort()
+		.exec(renderThisDrink);
+		function renderThisDrink(err,drink){
+			console.log(drink);
+			res.render("drink",drink[0])
 		}
-	}
-	res.render('drink',mainDrink);
-
 }

@@ -10,7 +10,7 @@ exports.view = function(req, res){
 			function renderOccasions(err,drinks){
 				if(err) console.log(err);
 				// console.log(drinks);
-				var occAsions = {field:"occasions", thing:[]};
+				var occAsions = {field:"occasion", thing:[]};
 				var dupl = 0;
 				var iiii=1;//index of passing object
 				//Begin looping through all drinks and create list of occasionss
@@ -51,15 +51,15 @@ exports.view = function(req, res){
 
 exports.select = function(req,res){
 	//Find all drinks with this occasions
-		var thisspirit = req.params.spirit;
-		console.log(thisspirit);
+		var thisocca = req.params.occa;
+		console.log(thisocca);
 		models.Drink
-			.find({"occasions": thisspirit})
+			.find({"occasions": thisocca})
 			.sort()
-			.exec(renderDrinksbySpirit);
-			function renderDrinksbySpirit(err,drinks){
+			.exec(renderDrinksbyOccasion);
+			function renderDrinksbyOccasion(err,drinks){
 				console.log(drinks);
-				res.render("select",{"mainLink":"occasions", "tag" : thisspirit, "drinks": drinks})
+				res.render("select",{"mainLink":"occasion", "tag" : thisocca, "drinks": drinks})
 			}
 }
 
@@ -67,12 +67,13 @@ exports.drink = function(req,res){
 	var thisdrink = req.params.recipe;
 	//---------------------Start new logic using mongooseDB
 	//Want to pass the drink object
-	var mainDrink = {};
+	console.log(thisdrink);
 	models.Drink
 		.find({"name":thisdrink})
 		.sort()
 		.exec(renderThisDrink);
 		function renderThisDrink(err,drink){
+			if(err)console.log(err);
 			console.log(drink);
 			res.render("drink",drink[0])
 		}

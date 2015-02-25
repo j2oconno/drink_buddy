@@ -75,5 +75,4 @@ exports.drink = function(req,res){
 			console.log(drink);
 			res.render("drink",drink[0])
 		}
-
 }
