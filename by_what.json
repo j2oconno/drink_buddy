@@ -53,6 +53,10 @@
 		{
 			"id" : "occasion",
 			"name" : "by occasion"
+		},
+		{
+			"id" : "main spirit",
+			"name" : "by main spirit"
 		}
 	]
 }
