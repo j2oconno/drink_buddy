@@ -21,10 +21,10 @@ exports.showFavorite = function(req, res){
 
 		for (var j = full_recipe_array.length - 1; j >= 0; j--) {
 			if (full_recipe_array[j].name == recipe_name_array[i]) {
-				my_favorite_recipe_array["drinks"].push(full_recipe_array[j]);
+				my_favorite_receipe_array["drinks"].push(full_recipe_array[j]);
 			};
 		};
 	};
 
-	res.render("add", my_favorite_recipe_array);
+	res.render("add", my_favorite_receipe_array);
 }

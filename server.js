@@ -12,7 +12,7 @@ var mongoose = require('mongoose');
 var add = require ('./routes/add')
 
 var recipesController = require("./routes/recipesController");
-var drinkController = require("./routes/drinkController");
+var moodController = require("./routes/moodController");
 var occasionController = require("./routes/occasionController");
 var index = require("./routes/index")
 var mainspiritController = require("./routes/mainspiritController");
@@ -53,17 +53,15 @@ if ('development' == app.get('env')) {
 // app.get("/mood/:mood", recipesController.recipes);
 app.get("/add/:name", add.addFavorite);
 app.get("/favorite", add.showFavorite);
-// app.get("/", drinkController.index);
+// app.get("/", moodController.index);
 app.get("/",index.view);
-app.get("/mood", drinkController.mood);
-app.get("/mood/:mood", drinkController.view);
-app.get("/mood/:mood/:recipe", drinkController.drink);
+//Drink controllers
+app.get("/mood", moodController.view);
+app.get("/mood/:mood", moodController.select);
+app.get("/mood/:mood/:recipe", moodController.drink);
 app.get("/occasion", occasionController.view);
 app.get("/occasion/:occa", occasionController.select);
 app.get("/occasion/:occa/:recipe", occasionController.drink);
-
-
-// Haven't made these yet
 app.get("/main%20spirit", mainspiritController.view);
 app.get("/main%20spirit/:spirit", mainspiritController.select);
 app.get("/main%20spirit/:spirit/:recipe", mainspiritController.drink);
