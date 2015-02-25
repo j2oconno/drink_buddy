@@ -278,7 +278,15 @@ body {
     font-family: FrontBoxFont;
     font-weight: 500;
 }
-/*FRONTBOX NEW END*/
+
+div.image div.small
+{
+    vertical-align: middle;
+    max-width: 200px;
+    max-height: 200px;
+    display: -moz-inline-box; /* Firefox 2 */
+    display: inline-block;
+}
 
 a:link {
     color: #000000;
