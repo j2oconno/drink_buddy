@@ -7,14 +7,25 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
+var mongoose = require('mongoose');
 
 var add = require ('./routes/add')
 
 var recipesController = require("./routes/recipesController");
 var drinkController = require("./routes/drinkController");
 var occasionController = require("./routes/occasionController");
+var index = require("./routes/index")
+var mainspiritController = require("./routes/mainspiritController");
+var timeController = require("./routes/timeController");
 // Example route
 // var user = require('./routes/user');
+
+// Connect to the Mongo database, whether locally or on Heroku
+// MAKE SURE TO CHANGE THE NAME FROM 'lab7' TO ... IN OTHER PROJECTS
+var local_database_name = 'drinkbuddy';
+var local_database_uri  = 'mongodb://localhost/' + local_database_name
+var database_uri = process.env.MONGOLAB_URI || local_database_uri
+mongoose.connect(database_uri);
 
 var app = express();
 
@@ -42,7 +53,8 @@ if ('development' == app.get('env')) {
 // app.get("/mood/:mood", recipesController.recipes);
 app.get("/add/:name", add.addFavorite);
 app.get("/favorite", add.showFavorite);
-app.get("/", drinkController.index);
+// app.get("/", drinkController.index);
+app.get("/",index.view);
 app.get("/mood", drinkController.mood);
 app.get("/mood/:mood", drinkController.view);
 app.get("/mood/:mood/:recipe", drinkController.drink);
@@ -50,8 +62,15 @@ app.get("/occasion", occasionController.view);
 app.get("/occasion/:occa", occasionController.select);
 app.get("/occasion/:occa/:recipe", occasionController.drink);
 
-// Example route
-// app.get('/users', user.list);
+
+// Haven't made these yet
+app.get("/main%20spirit", mainspiritController.view);
+app.get("/main%20spirit/:spirit", mainspiritController.select);
+app.get("/main%20spirit/:spirit/:recipe", mainspiritController.drink);
+app.get("/time%20of%20day", timeController.view);
+app.get("/time%20of%20day/:time", timeController.select);
+app.get("/time%20of%20day/:time/:recipe", timeController.drink);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
