@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<head> 
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-      <!-- Bootstrap -->
-      <link href="/css/bootstrap.min.css" rel="stylesheet">
-      <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-      <link href="/css/stylesheet.css" rel="stylesheet">
+    	<!-- Bootstrap -->
+    	<link href="css/bootstrap.min.css" rel="stylesheet">
+    	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    	<link href="css/stylesheet.css" rel="stylesheet">
 
-      <title>{{tag}}</title>
+    	<title>Main Spirit</title>
     </head>
 
 <body>
+  <div class="moodbackground">
+
+
 
 <!-- NAVIGATION BAR -->
+
+
   <nav class="navbar navbar-default">
     <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -29,7 +34,9 @@
                </div>
             </div>
          </form>
-    <!-- Collect the nav links, forms, and other content      
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
       <ul class="nav navbar-nav navbar-right pull-right" style="padding-right:20px;">
         <li><a href="login.html"> Sign In</a></li>
       </ul>
@@ -43,34 +50,36 @@
 <!-- START BANNER -->
 <div class="jumbotron">
   <div class="container">
-    <p class="ChooseHead">Recipes for {{tag}}</p>
+    <p>Recipes by Main Spirit</p>
   </div>
 </div>
 <!-- END BANNER -->
-
-
-<!-- START DRINK RECIPE BOXES-->
+<!-- START MENU BOXES-->
 <div class="container">
-  <div class="row"> 
-      {{#each drinks}}
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-          <div class="frontbox">
-          <a href="/{{../mainLink}}/{{../tag}}/{{name}}">
-            <div class="frontcontent">
-                  <img src="{{image}}" class = "img-responsive img-rounded">
-          </a>
-          <h4>{{name}}</h4>
-        </div></div></div>
-      {{/each}}
-  </div>
+      
+      <div class="row"> 
+    {{#each spirit}} 
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <a href="/main spirit/{{name}}">
+              <div class='square-box'>
+                <div class='square-content'>
+                  <h4>{{ name }}</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+    {{/each}}
+      </div>
 </div>
-<!-- END DRINK RECIPE BOXES -->
+<!-- END MENU BOXES -->
 
-  <script src="/js/jquery-1.11.0.js"></script>
-  <script src="/js/bootstrap.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
+  <script src="js/jquery-1.11.0.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script type="text/javascript" src="/scripts/handlebars-0.9.0.pre.4.js" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
 </body>
 
 </html>

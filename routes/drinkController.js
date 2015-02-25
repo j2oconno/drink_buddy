@@ -33,7 +33,7 @@ exports.view = function(req, res){
 	console.log(thismood);
 	//pass recipe template mood, drink names, and images
 	//First pull out all the drinks matching thismood
-	var moodDrinks = {tag: thismood,drink:[]};
+	var moodDrinks = {tag: thismood, drinks:[]};
 	var ii = 0;
 	//This loop creates object of all drinks of thismood
 	for(i=0;  i < drinks["drinks"].length; i++){

@@ -1,70 +1,66 @@
-var drinks = require("../drinks.json");
+var models = require('../models');
 
 exports.view = function(req, res){
-	
-	var occAsion = {occ: []};
-	var dupl1 = 0;
-	var iiii = 1; //index of passing object
-	//This loop creates object of all occasions
-	for(i=0; i < drinks["drinks"].length; i++){//Loop through all drinks
-		//Length of the occasion array of this drink
-		var len = drinks["drinks"][i]["occasions"].length;
-		if (i===0)//set first occasion
-		occAsion.occ[0]={"name" : drinks["drinks"][i]["occasions"][0]};
-		else {//Loop through all occasions of this drink to ensure no overlap with past occasions
-			for(ii=0; ii < len; ii++){//loop through all occasions of this drink
-				dupl=0;
-				for (j = 0; j < occAsion.occ.length; j++){
-					if(occAsion.occ[j]["name"] === drinks["drinks"][i]["occasions"][ii]){
-					dupl = 1;
+	models.Drink
+			.find()
+			.sort()
+			.exec(renderTimes);
+			function renderTimes(err,drinks){
+				if(err) console.log(err);
+				// console.log(drinks);
+				var dTimes = {field:"time of day", thing:[]};
+				var dupl = 0;
+				var iiii=1;//index of passing object
+				//Begin looping through all drinks and create list of time of days
+				for(i=0; i<drinks.length; i++){//loops through all drinks
+					dupl=0;
+					if(i===0){//skip first time of day and set our first field
+					//Begin looping over other drinks' time of days 
+					//set first time of day field
+					dTimes.thing[0] = {"name": drinks[0]["time of day"]}
+				
+					} else{
+					//Begin looping over past time of days to make a non-repeating list
+					for(ii=0; ii<dTimes.thing.length; ii++){
+						if(dTimes.thing[ii]["name"]===drinks[i]["time of day"])
+								dupl = 1;
+						}
+						if(dupl===0)
+							dTimes.thing[iiii++]={"name": drinks[i]["time of day"]};
 					}
 				}
-				if(dupl===0){//Set with occasion
-				occAsion.occ[iiii++] = {"name" : drinks["drinks"][i]["occasions"][ii]};
+				res.render('boxes',dTimes);
 			}
-			}
-		}
-	}
-	console.log(occAsion);
-	res.render('occasion',occAsion);
 }
 
 exports.select = function(req,res){
-	var thisocca = req.params.occa;
-	//pass recipe template mood, drink names, and images
-	//First pull out all the drinks matching thisocca
-	var occaDrinks = {tag: thisocca, drink:[]};
-	var i = 0;
-	//This loop creates object of all drinks of occasion thisocca
-	console.log(drinks["drinks"].length);
-	for(ii=0;  ii < drinks["drinks"].length; ii++){//Loop over all drinks
-		var len = drinks["drinks"][ii]["occasions"].length//length of this drinks "occasions"
-		console.log(ii);
-		console.log(drinks["drinks"][ii]["occasions"]);
-		for(iii=0; iii<len; iii++){//Loop over this drinks occasions
-			console.log(drinks["drinks"][ii]["occasions"][iii]);
-			if (drinks["drinks"][ii]["occasions"][iii] === thisocca){
-				console.log("Got into If statement");
-				occaDrinks.drink[i] = drinks["drinks"][ii];
-				i++;
+	//Find all drinks with this time of day
+		var thisTime = req.params.time;
+		models.Drink
+			.find({"time of day": thisTime})
+			.sort()
+			.exec(renderDrinksbyTime);
+			function renderDrinksbyTime(err,drinks){
+				if(err) console.log(err);
+				res.render("select",{"mainLink": "time of day", "tag" : thisTime, "drinks": drinks})
 			}
-		}
-	}
-	console.log(occaDrinks);
-	res.render('select',occaDrinks);
 }
 
 exports.drink = function(req,res){
 	var thisdrink = req.params.recipe;
-	//---------------------Start new logic using the drinks.json
+	//---------------------Start new logic using mongooseDB
 	//Want to pass the drink object
-	var mainDrink = {};
-	//This loop creates object of this drink of thismood
-	for(i=0;  i < drinks["drinks"].length; i++){
-		if (drinks["drinks"][i]["name"] === thisdrink){
-			mainDrink = drinks["drinks"][i];
+	models.Drink
+		.find({"name":thisdrink})
+		.sort()
+		.exec(renderThisDrink);
+		function renderThisDrink(err,drink){
+			if(err) console.log(err);
+			console.log(drink);
+			console.log(drink.ingredients);
+			var D = drink[0];
+			console.log(D.ingredients[0]);
+			res.render("drink",drink[0])
 		}
-	}
-	res.render('drink',mainDrink);
 
 }

@@ -15,7 +15,10 @@
 
 <body>
 
+
 <!-- NAVIGATION BAR -->
+
+
   <nav class="navbar navbar-default">
     <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -29,7 +32,10 @@
                </div>
             </div>
          </form>
-    <!-- Collect the nav links, forms, and other content      
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+      
       <ul class="nav navbar-nav navbar-right pull-right" style="padding-right:20px;">
         <li><a href="login.html"> Sign In</a></li>
       </ul>
@@ -52,10 +58,10 @@
 <!-- START DRINK RECIPE BOXES-->
 <div class="container">
   <div class="row"> 
-      {{#each drinks}}
+      {{#each drink}}
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
           <div class="frontbox">
-          <a href="/{{../mainLink}}/{{../tag}}/{{name}}">
+          <a href="/mood/{{../tag}}/{{name}}">
             <div class="frontcontent">
                   <img src="{{image}}" class = "img-responsive img-rounded">
           </a>

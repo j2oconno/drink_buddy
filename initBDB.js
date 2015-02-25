@@ -10,29 +10,30 @@ var local_database_uri  = 'mongodb://localhost/' + local_database_name
 var database_uri = process.env.MONGOLAB_URI || local_database_uri
 mongoose.connect(database_uri);
 
+
 // Do the initialization here
 
 // Step 1: load the JSON data
-var drinks_json = require('./drinks1.json');
+var boxes_json = require('./by_category.json');
 
 // Step 2: Remove all existing documents
-models.Drink
+models.Boxes
   .find()
   .remove()
-  .exec(onceCleardrinks); // callback to continue at
+  .exec(onceClear); // callback to continue at
 
 // Step 3: load the data from the JSON file
-function onceCleardrinks(err) {
+function onceClear(err) {
   if(err) console.log(err);
 
   // loop over the boxes, construct and save an object from each one
   // Note that we don't care what order these saves are happening in...
-  var to_save_count = drinks_json.length;
-  for(var i=0; i<drinks_json.length; i++) {
-    var drjson = drinks_json[i];
-    var drink1 = new models.Drink(drjson);
+  var to_save_count = boxes_json.length;
+  for(var i=0; i<boxes_json.length; i++) {
+    var json = boxes_json[i];
+    var box = new models.Boxes(json);
 
-    drink1.save(function(err, drink1) {
+    box.save(function(err, box) {
       if(err) console.log(err);
 
       to_save_count--;

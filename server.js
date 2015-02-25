@@ -15,6 +15,8 @@ var recipesController = require("./routes/recipesController");
 var drinkController = require("./routes/drinkController");
 var occasionController = require("./routes/occasionController");
 var index = require("./routes/index")
+var mainspiritController = require("./routes/mainspiritController");
+var timeController = require("./routes/timeController");
 // Example route
 // var user = require('./routes/user');
 
@@ -61,12 +63,12 @@ app.get("/occasion/:occa", occasionController.select);
 app.get("/occasion/:occa/:recipe", occasionController.drink);
 
 // Haven't made these yet
-app.get("/mainspirit", mainspiritController.view);
-app.get("/mainspirit/:spirit", mainspiritController.select);
-app.get("/mainspirit/:spirit/:recipe", mainspiritController.drink);
-app.get("/timeofyear", timeController.view);
-app.get("/timeofyear/:time", timeController.select);
-app.get("/timeofyear/:time/:recipe", timeController.drink);
+app.get("/main%20spirit", mainspiritController.view);
+app.get("/main%20spirit/:spirit", mainspiritController.select);
+app.get("/main%20spirit/:spirit/:recipe", mainspiritController.drink);
+app.get("/time%20of%20day", timeController.view);
+app.get("/time%20of%20day/:time", timeController.select);
+app.get("/time%20of%20day/:time/:recipe", timeController.drink);
 
 
 http.createServer(app).listen(app.get('port'), function(){
