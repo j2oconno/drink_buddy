@@ -202,7 +202,7 @@ bottom:0;
 /* End Hard coded boxes */
 
 .indexbackground{
-    background: url("../images/background2.jpg") no-repeat center center fixed; 
+    background: url("..") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
