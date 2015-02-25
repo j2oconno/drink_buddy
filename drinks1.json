@@ -161,42 +161,95 @@
             "mood": "romantic",
             "occasions": [
                 "new years eve",
-                "girls night out"
+                "girls night out",
+                "birthday"
             ],
             "main spirit": [
-                "Vodka"
+                "Vodka",
+                "Triple Sec"
             ],
-            "time of day": "after 5",
-            "image": "/images/romantic/pearsmartini.jpg",
+            "time of day": "late night",
+            "image": "/images/romantic/Cosmopolitan.jpg",
             "directions": [
                 {
-                    "dir": "Fill a shaker with ice cubes"
+                    "dir": "Shake vodka, triple sec, lime and cranberry juice vigorously in a shaker with ice
+"
                 },
                 {
                     "dir": "Add all ingredients"
                 },
                 {
-                    "dir": "Shake and strain into a chilled cocktail glass"
+                    "dir": "Strain into a martini glass"
                 },
                 {
-                    "dir": "Garnish with pear"                    
+                    "dir": "Garnish with a lime wedge on the rim, and serve
+"                    
                     }
             ],
             "ingredients": [
                 {
-                    "ingre": "2 Parts Absolut Pears"
+                    "ingre": "1 oz vodka"
                 },
                 {
-                    "ingre": "1 Part Simple Syrup"
+                    "ingre": "1/2 oz triple sec"
                 },
                 {
                     "ingre": "¾ Part Lemon Juice"
                 },
                 {
-                    "ingre": "½ Part Pear Puree"
+                    "ingre": "1/2 oz Rose's® lime juice"
                 },
                 {
-                    "ingre": "1 Slice Pear"
+                    "ingre": "1/2 oz cranberry juice"
+                }
+
+            ]
+        },
+        {
+            "name": "Tequila Sunset",
+            "mood": "romantic",
+            "occasions": [
+                "new years eve",
+                "girls night out",
+                "birthday"
+            ],
+            "main spirit": [
+                "Vodka",
+                "Triple Sec"
+            ],
+            "time of day": "late night",
+            "image": "/images/romantic/pearsmartini.jpg",
+            "directions": [
+                {
+                    "dir": "Shake vodka, triple sec, lime and cranberry juice vigorously in a shaker with ice
+"
+                },
+                {
+                    "dir": "Add all ingredients"
+                },
+                {
+                    "dir": "Strain into a martini glass"
+                },
+                {
+                    "dir": "Garnish with a lime wedge on the rim, and serve
+"                    
+                    }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "1 oz vodka"
+                },
+                {
+                    "ingre": "1/2 oz triple sec"
+                },
+                {
+                    "ingre": "¾ Part Lemon Juice"
+                },
+                {
+                    "ingre": "1/2 oz Rose's® lime juice"
+                },
+                {
+                    "ingre": "1/2 oz cranberry juice"
                 }
 
             ]
