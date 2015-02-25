@@ -1,5 +1,7 @@
 var drinks = require("../drinks.json");
 var category = require("../by_category.json");
+	console.log(category);
+
 
 
 exports.mood = function(req, res){
