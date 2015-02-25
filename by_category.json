@@ -15,6 +15,14 @@
 		{
 			"id" : "favorite",
 			"name" : "my favorites"
+		},
+		{
+			"id" : "main spirit",
+			"name" : "by main spirit"
+		},
+		{
+			"id" : "time of day",
+			"name" : "by time of day"
 		}
 	]
 }

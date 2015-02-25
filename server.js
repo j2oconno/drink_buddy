@@ -49,6 +49,7 @@ app.get("/mood/:mood/:recipe", drinkController.drink);
 app.get("/occasion", occasionController.view);
 app.get("/occasion/:occa", occasionController.select);
 app.get("/occasion/:occa/:recipe", occasionController.drink);
+
 // Example route
 // app.get('/users', user.list);
 
