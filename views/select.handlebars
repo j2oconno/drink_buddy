@@ -33,7 +33,11 @@
       <ul class="nav navbar-nav navbar-right pull-right" style="padding-right:20px;">
         <li><a href="login.html"> Sign In</a></li>
       </ul>
+<<<<<<< HEAD
     </div>/.navbar-collapse -->
+=======
+    </div><! /.navbar-collapse -->
+>>>>>>> 7a58a049a8f5fd432bce2eece205d133f390697f
   </div><!-- /.container-fluid -->
 </nav>
 
@@ -51,16 +55,23 @@
 
 <!-- START DRINK RECIPE BOXES-->
 <div class="container">
-  <div class="row"> 
+  <div class="row" class="center"> 
       {{#each drinks}}
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-          <div class="frontbox">
-          <a href="/{{../mainLink}}/{{../tag}}/{{name}}">
-            <div class="frontcontent">
-                  <img src="{{image}}" class = "img-responsive img-rounded">
-          </a>
-          <h4>{{name}}</h4>
-        </div></div></div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="border:2pt solid black;">
+            <div class="square-box">
+              <a href="/{{../mainLink}}/{{../tag}}/{{name}}">
+                <div class="square-content" style="background-color:#FFFFFF; border:2pt solid green">
+                      <img src="{{image}}" width="100" class="img-responsive" class="center"/>
+                </div>
+              </a>
+            </div>
+        <div class="row" style="border:2pt solid red;">
+          <div class="col" style="border:2pt solid blue;">
+            <span><h4>{{name}}</h4></span>
+          </div>
+        </div>
+      </div>
+    </div>
       {{/each}}
   </div>
 </div>
