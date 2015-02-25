@@ -1,6 +1,6 @@
 @font-face {
     font-family: MainLogoFont;
-    src: url("../fonts/KaushanScript-Regular.otf") format("opentype");
+    src: url("../fonts/BadScript.ttf") format("opentype");
 }
 
 @font-face {
@@ -49,7 +49,12 @@
     box-shadow: none;
 }
 
-
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding:10px;
+}
 
 #user {
     text-align: center; 
@@ -202,7 +207,7 @@ bottom:0;
 /* End Hard coded boxes */
 
 .indexbackground{
-    background: url("../images/background2.jpg") no-repeat center center fixed; 
+    background: url("..") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -220,6 +225,9 @@ body {
 }
 
 
+
+
+
 .occasionbackground {
     background-repeat: no-repeat; 
     background-size: 100%;
@@ -228,20 +236,12 @@ body {
 
 .square-box{
     position: relative;
-    width: 60%;
+    width: 100%;
+    margin: 1em;
     background: #C0C0C0;
     opacity: 0.9;
-    margin: 2em;
-    margin-left: 2em;
-    margin-right: 2em;
     height: 11em;
 }
-
-/*.square-box:before{
-    content: "";
-    display: block;
-    padding-top: 100%;
-}*/
 
 .square-content{
     position:  absolute;
@@ -250,7 +250,6 @@ body {
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    /*color: #000000;*/
     font-family: FrontBoxFont;
     font-weight: 500;
     font-size: 16pt;
@@ -279,7 +278,15 @@ body {
     font-family: FrontBoxFont;
     font-weight: 500;
 }
-/*FRONTBOX NEW END*/
+
+div.image div.small
+{
+    vertical-align: middle;
+    max-width: 200px;
+    max-height: 200px;
+    display: -moz-inline-box; /* Firefox 2 */
+    display: inline-block;
+}
 
 a:link {
     color: #000000;

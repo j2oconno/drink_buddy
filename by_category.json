@@ -1,22 +1,23 @@
 [
-{
-	"link" : "mood",
-	"name" : "by mood"
-},
-{
-	"link" : "occasion",
-	"name" : "by occasion"
-},
-{
-	"link" : "main spirit",
-	"name" : "main spirit"
-},
-{
-	"link" : "time of day",
-	"name" : "time of day"
-},
-{
-	"link" : "favorite",
-	"name" : "my favorites"
-}
+	{
+		"link" : "mood",
+		"image" : "http://lorempixel.com/400/200/people",
+		"name" : "by mood"
+	},
+	{
+		"link" : "occasion",
+		"name" : "by occasion"
+	},
+	{
+		"link" : "main spirit",
+		"name" : "main spirit"
+	},
+	{
+		"link" : "time of day",
+		"name" : "time of day"
+	},
+	{
+		"link" : "favorite",
+		"name" : "my favorites"
+	}
 ]

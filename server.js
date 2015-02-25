@@ -11,7 +11,6 @@ var mongoose = require('mongoose');
 
 var add = require ('./routes/add')
 
-var recipesController = require("./routes/recipesController");
 var moodController = require("./routes/moodController");
 var occasionController = require("./routes/occasionController");
 var index = require("./routes/index")
