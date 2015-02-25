@@ -1,5 +1,6 @@
 [
 {
+<<<<<<< HEAD
 	"link" : "mood",
 	"name" : "by mood"
 },
@@ -20,3 +21,28 @@
 	"name" : "my favorites"
 }
 ]
+=======
+	"by_what" : [
+		{
+			"id" : "mood",
+			"name" : "by mood"
+		},
+		{
+			"id" : "occasion",
+			"name" : "by occasion"
+		},
+		{
+			"id" : "favorite",
+			"name" : "my favorites"
+		},
+		{
+			"id" : "main spirit",
+			"name" : "by main spirit"
+		},
+		{
+			"id" : "time of day",
+			"name" : "by time of day"
+		}
+	]
+}
+>>>>>>> c4a32bd536e4b642eb7fca8ea8162758d290a740
