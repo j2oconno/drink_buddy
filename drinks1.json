@@ -110,5 +110,95 @@
                 	"ingre": "1oz Brandy or Cognac"
                 }
             ]
-        }
+        },
+        {
+            "name": "Pears Martini",
+            "mood": "romantic",
+            "occasions": [
+                "new years eve",
+                "girls night out"
+            ],
+            "main spirit": [
+                "Vodka"
+            ],
+            "time of day": "after 5",
+            "image": "/images/romantic/pearsmartini.jpg",
+            "directions": [
+                {
+                    "dir": "Fill a shaker with ice cubes"
+                },
+                {
+                    "dir": "Add all ingredients"
+                },
+                {
+                    "dir": "Shake and strain into a chilled cocktail glass"
+                },
+                {
+                    "dir": "Garnish with pear"                    
+                    }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "2 Parts Absolut Pears"
+                },
+                {
+                    "ingre": "1 Part Simple Syrup"
+                },
+                {
+                    "ingre": "¾ Part Lemon Juice"
+                },
+                {
+                    "ingre": "½ Part Pear Puree"
+                },
+                {
+                    "ingre": "1 Slice Pear"
+                }
+
+            ]
+        },
+        {
+            "name": "Cosmopolitan",
+            "mood": "romantic",
+            "occasions": [
+                "new years eve",
+                "girls night out"
+            ],
+            "main spirit": [
+                "Vodka"
+            ],
+            "time of day": "after 5",
+            "image": "/images/romantic/pearsmartini.jpg",
+            "directions": [
+                {
+                    "dir": "Fill a shaker with ice cubes"
+                },
+                {
+                    "dir": "Add all ingredients"
+                },
+                {
+                    "dir": "Shake and strain into a chilled cocktail glass"
+                },
+                {
+                    "dir": "Garnish with pear"                    
+                    }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "2 Parts Absolut Pears"
+                },
+                {
+                    "ingre": "1 Part Simple Syrup"
+                },
+                {
+                    "ingre": "¾ Part Lemon Juice"
+                },
+                {
+                    "ingre": "½ Part Pear Puree"
+                },
+                {
+                    "ingre": "1 Slice Pear"
+                }
+
+            ]
+        },
 ]
