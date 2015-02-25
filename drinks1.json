@@ -78,13 +78,13 @@
         },
         {
             "name": "Pears Martini",
-            "mood": "romantic",
+            "mood": "relax & chill",
             "occasions": [
                 "birthday",
                 "new years eve"
             ],
             "main spirit": [
-                "Champagne"
+                "fjdal"
             ],
             "time of day": "after 5",
             "image": "/images/romantic/pearsmartini.jpg",
@@ -400,8 +400,7 @@
             "image": "/images/romantic/Cosmopolitan.jpg",
             "directions": [
                 {
-                    "dir": "Shake vodka, triple sec, lime and cranberry juice vigorously in a shaker with ice
-"
+                    "dir": "Shake vodka, triple sec, lime and cranberry juice vigorously in a shaker with ice"
                 },
                 {
                     "dir": "Add all ingredients"
@@ -410,8 +409,7 @@
                     "dir": "Strain into a martini glass"
                 },
                 {
-                    "dir": "Garnish with a lime wedge on the rim, and serve
-"                    
+                    "dir": "Garnish with a lime wedge on the rim, and serve"                    
                     }
             ],
             "ingredients": [
@@ -449,8 +447,7 @@
             "image": "/images/romantic/pearsmartini.jpg",
             "directions": [
                 {
-                    "dir": "Shake vodka, triple sec, lime and cranberry juice vigorously in a shaker with ice
-"
+                    "dir": "Shake vodka, triple sec, lime and cranberry juice vigorously in a shaker with ice"
                 },
                 {
                     "dir": "Add all ingredients"
@@ -459,8 +456,7 @@
                     "dir": "Strain into a martini glass"
                 },
                 {
-                    "dir": "Garnish with a lime wedge on the rim, and serve
-"                    
+                    "dir": "Garnish with a lime wedge on the rim, and serve"                    
                     }
             ],
             "ingredients": [
@@ -481,5 +477,5 @@
                 }
 
             ]
-        },
+        }
 ]

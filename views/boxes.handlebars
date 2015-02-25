@@ -55,19 +55,17 @@
 </div>
 <!-- END BANNER -->
 <!-- START MENU BOXES-->
-<div class="container">
+<div class="container mood-container">
       
       <div class="row"> 
     {{#each thing}} 
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <a href="/{{../field}}/{{name}}">
-              <div class='square-box'>
-                <div class='square-content'>
-                  <h4>{{ name }}</h4>
-                </div>
-              </div>
-            </a>
+        <a href="/{{../field}}/{{name}}">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" >
+            <div style="background-image:url({{image}}); border: 1px solid black">
+              <h4 class='mood-name'>{{ name }}</h4>
+            </div>
           </div>
+        </a>
     {{/each}}
       </div>
 </div>

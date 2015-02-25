@@ -1,11 +1,7 @@
 [
 	{
 		"link" : "mood",
-<<<<<<< HEAD
-		"image" : "",
-=======
 		"image" : "http://lorempixel.com/400/200/people",
->>>>>>> 7a58a049a8f5fd432bce2eece205d133f390697f
 		"name" : "by mood"
 	},
 	{
@@ -24,8 +20,4 @@
 		"link" : "favorite",
 		"name" : "my favorites"
 	}
-<<<<<<< HEAD
 ]
-=======
-]
->>>>>>> 7a58a049a8f5fd432bce2eece205d133f390697f

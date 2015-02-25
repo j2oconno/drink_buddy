@@ -18,7 +18,8 @@ exports.Drink = Mongoose.model('Drink', DrinkSchema);
 var BoxesSchema = new Mongoose.Schema({
   // fields are defined here
   "link" : String,
-  "name": String
+  "name": String,
+  "image": String
 });
 
 exports.Boxes = Mongoose.model('Boxes', BoxesSchema);

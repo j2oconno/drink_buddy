@@ -49,8 +49,6 @@
     box-shadow: none;
 }
 
-<<<<<<< HEAD
-=======
 .center {
     margin-left: auto;
     margin-right: auto;
@@ -58,7 +56,6 @@
     padding:10px;
 }
 
->>>>>>> 7a58a049a8f5fd432bce2eece205d133f390697f
 #user {
     text-align: center; 
     font-size:16pt;
@@ -210,11 +207,8 @@ bottom:0;
 /* End Hard coded boxes */
 
 .indexbackground{
-<<<<<<< HEAD
     background: url("") no-repeat center center fixed; 
-=======
     background: url("..") no-repeat center center fixed; 
->>>>>>> 7a58a049a8f5fd432bce2eece205d133f390697f
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -318,4 +312,12 @@ h1, h2, h3, h4 {
     font-family: "Forum";
     font-size: 18px;
 }*/
+
+.mood-name{
+    padding: 80px 0;
+}
+
+.mood-container{
+    padding: 20px 0;
+}
 
