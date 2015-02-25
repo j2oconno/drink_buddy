@@ -101,7 +101,6 @@
     hover: none;
 }
 
-
 .paddedTable td {
 padding: 5px;
 }
@@ -178,6 +177,7 @@ position:absolute;
 bottom:0;
 }
 */
+
 .mixedbase{
     float:left;
     margin:0px;
@@ -224,59 +224,42 @@ body {
     background-position: center;
 }
 
-.frontbox {
-    /*background-color: #FFFFFF;*/
-    position: relative;
-    opacity: 0.9;
-    padding:0px 0px 0px 0px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
-/*    border-style: solid;*/
-    border-width: 0px;
-    width:60%;
-    height: 70%;
-}
-
-.frontcontent{
-    width:100%;
-    height:100%;
-/*    border-style: solid;*/
-    border-width: 2px;
-}
-
-
 .square-box{
     position: relative;
     width: 60%;
     background: #C0C0C0;
     opacity: 0.9;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    height: 11em;
 }
-.square-box:before{
+
+/*.square-box:before{
     content: "";
     display: block;
     padding-top: 100%;
-}
+}*/
+
 .square-content{
     position:  absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    color: #000000;
+    display: table-cell;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    /*color: #000000;*/
     font-family: FrontBoxFont;
     font-weight: 500;
     font-size: 16pt;
+    height: 100%;
+    width: 100%;
 }
 
 #square-image{
     img.resize{
-    max-width:20px; /* you can use % */
-    height: auto;
+    max-width:60%; /* you can use % */
+    height: 70%;
 }
 }
 
@@ -285,6 +268,7 @@ body {
    width: 100%;
    height: 100%;
 }
+
 .square-content span {
     display: table-cell;
     text-align: center;
@@ -303,7 +287,7 @@ h1, h2, h3, h4 {
 	text-align: center;
 }
 
-.bottlediv {
+/*.bottlediv {
     width: 20%;
     height: inherit;
     float: left;
@@ -317,5 +301,5 @@ h1, h2, h3, h4 {
     line-height: 2;
     font-family: "Forum";
     font-size: 18px;
-}
+}*/
 
