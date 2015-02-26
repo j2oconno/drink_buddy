@@ -10,6 +10,7 @@ var handlebars = require('express3-handlebars');
 var mongoose = require('mongoose');
 
 var add = require ('./routes/add')
+var add1 = require ('./routes/add1')
 
 var moodController = require("./routes/moodController");
 var occasionController = require("./routes/occasionController");
@@ -49,11 +50,10 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-// app.get("/mood/:mood", recipesController.recipes);
 app.get("/add/:name", add.addFavorite);
 app.get("/favorite", add.showFavorite);
-// app.get("/", moodController.index);
 app.get("/",index.view);
+
 //Drink controllers
 app.get("/mood", moodController.view);
 app.get("/mood/:mood", moodController.select);
@@ -67,6 +67,9 @@ app.get("/main%20spirit/:spirit/:recipe", mainspiritController.drink);
 app.get("/time%20of%20day", timeController.view);
 app.get("/time%20of%20day/:time", timeController.select);
 app.get("/time%20of%20day/:time/:recipe", timeController.drink);
+
+app.get("/addadrink", add1.showField);
+app.post("/addadrink/add",add1.addDrink);
 
 
 http.createServer(app).listen(app.get('port'), function(){

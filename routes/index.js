@@ -16,7 +16,7 @@ exports.view = function(req, res){
 		.exec(renderBoxes);
 
 	function renderBoxes(err, boxes) {
-		console.log(boxes);
+		// console.log(boxes);
 		res.render('index', {'by_what': boxes});
 	}
 

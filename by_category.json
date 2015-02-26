@@ -22,5 +22,9 @@
 	{
 		"link" : "favorite",
 		"name" : "my favorites"
+	},
+	{
+		"link" : "addadrink",
+		"name" : "add a drink"
 	}
 ]
