@@ -12,12 +12,12 @@
 	{
 		"link" : "main spirit",
 		"image" : "./images/homemainspirit.png",
-		"name" : "main spirit"
+		"name" : "by main spirit"
 	},
 	{
 		"link" : "time of day",
 		"image" : "./images/hometimeofday.png",
-		"name" : "time of day"
+		"name" : "by time of day"
 	},
 	{
 		"link" : "favorite",

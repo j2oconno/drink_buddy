@@ -230,53 +230,64 @@ body {
     background-position: center;
 }
 
-
-.square-box{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin-left:-4px;
+.square-container{
+    margin-left:-24px;
 }
 
-.square-layer{
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+.square-box{
+    float:center;
+    display:inline-block;
+    width: 144px;
+    min-width:100%;
+    height: 144px;
+    min-height: 100%;
+    position:relative;
 }
 
 .square-content{
     position:  absolute;
     display: table-cell;
-    margin-left:0px;
-    margin-top:10px;
     font-family: FrontBoxFont;
     font-weight: 500;
     font-size: 16pt;
-    height: 100%;
-    width: 100%;
 }
 
-.square-content div {
+div.square-content {
    display: table;
-   width: 90%;
-   height: 90%;
+   margin: 10px auto 10px auto;
+   width: 136px;
+   height: 136px;
+   min-height:100%;
    background-image: contain;
+   opacity:0.9;
+   background:#000000; 
 }
 
-.square-content span {
-    display: table-cell;
+
+div.square-layer{
+    background:rgba(255,255,255,0.5);
+    height:100%;
+    width:100%;
+    table-layout: fixed;
+    z-index: 100; 
+    position: relative;
+}
+
+.square-content img{
+    position:absolute;
+    opacity:0.9;
+}
+
+.square-content h4 {
+    position:absolute;
     text-align: center;
-    vertical-align: middle;
-    color: #000000;
+    padding-top:10px;
+    margin: auto 0 auto 0;
+    color: white;
     font-family: FrontBoxFont;
-    font-weight: 500;
-}
+    font-size: 20pt;
+    z-index:100;
 
-div.image div.small
-{
-    vertical-align: middle;
-    max-width: 200px;
-    max-height: 200px;
-    display: -moz-inline-box; /* Firefox 2 */
-    display: inline-block;
 }
 
 a:link {
