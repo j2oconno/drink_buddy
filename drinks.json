@@ -1,5 +1,6 @@
 [
         {
+            "field":"drinks",
             "name": "Midnight Mint",
             "mood": "introspective",
             "mood_image": "../images/mood/introspective.jpg",
@@ -40,6 +41,7 @@
             ]
         },
         {
+            "field":"drinks",
             "name": "Raspberry Bellini",
             "mood": [
                 "romantic"
@@ -81,6 +83,7 @@
             ]
         },
         {
+            "field":"drinks",
             "name": "Orange Bliss",
             "mood": [
                 "romantic"
@@ -122,6 +125,7 @@
             ]
         },
         {
+            "field":"drinks",
             "name": "Lady In Red",
             "mood": [
                 "romantic"
@@ -157,6 +161,7 @@
             ]
         },
         {
+            "field":"drinks",
             "name": "Cranberry Vodka",
             "mood": [
                 "romantic"
@@ -192,6 +197,7 @@
             ]
         },
         {
+            "field":"drinks",
             "name": "SideCar",
             "mood": [
                 "manly"
@@ -229,6 +235,7 @@
             ]
         },
         {
+            "field":"drinks",
             "name": "Pears Martini",
             "mood": [
                 "romantic"
@@ -277,6 +284,7 @@
             ]
         },
         {
+            "field":"drinks",
             "name": "Cosmopolitan",
             "mood": [
                 "romantic"
@@ -327,6 +335,7 @@
             ]
         },
         {
+            "field":"drinks",
             "name": "Tequila Sunset",
             "mood": [
                 "romantic"
@@ -376,6 +385,7 @@
             ]
         },
         {
+            "field":"drinks",
             "name": "Old Fashioned",
             "mood": [
                 "relax & chill"
@@ -423,6 +433,7 @@
             ]
         },
         {
+            "field":"drinks",
             "name": "Adios Mother",
             "mood": [
                 "reckless"
