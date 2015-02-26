@@ -69,7 +69,7 @@ app.get("/time%20of%20day/:time", timeController.select);
 app.get("/time%20of%20day/:time/:recipe", timeController.drink);
 
 app.get("/addadrink", add1.showField);
-app.get("/addadrink/add",add1.addDrink);
+app.post("/addadrink/add",add1.addDrink);
 
 
 http.createServer(app).listen(app.get('port'), function(){

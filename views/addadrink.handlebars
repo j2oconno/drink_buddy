@@ -49,40 +49,40 @@
       <div><h1 class="MainLogo">DrinkBuddy</h1></div>
       <div><h3 class="ChooseHead">Add a Recipe:</h3></div>
 
-<form id="new-project-form" role="form">
+<form id="new-project-form" role="form" method="post" action="/addadrink/add">
     <div class="form-group">
       <label for="name">Name of new Drink:</label>
-      <input type="text" class="form-control" id="name" placeholder="Drink Name">
+      <input type="text" class="form-control" name="name" id="name" placeholder="Drink Name">
     </div>
     <div class="form-group">
       <label for="image_url">Drink image URL</label>
-      <input type="text" class="form-control" id="image_url" placeholder="http://www.example.com/really_cool_drink.jpg">
+      <input type="text" class="form-control" name="image_url" placeholder="http://www.example.com/really_cool_drink.jpg">
     </div>
     <div class="form-group">
       <label for="mood">Mood</label>
-      <input type="text" class="form-control" id="mood" placeholder="Enter One Mood">
+      <input type="text" class="form-control" name="mood" placeholder="Enter One Mood">
     </div>
     <div class="form-group">
       <label for="occasions">Occasions:</label>
-      <textarea type="text" class="form-control" id="occasions" rows="3" placeholder="Enter as many Occasions as you'd like"></textarea>
+      <textarea type="text" class="form-control" name="occasions" rows="3" placeholder="Enter as many Occasions as you'd like"></textarea>
     </div>
     <div class="form-group">
       <label for="mainspirit">Main Spirits:</label>
-      <textarea type="text" class="form-control" id="mainspirit" rows="3" placeholder="Enter as many Main Spirits as you'd like"></textarea>
+      <textarea type="text" class="form-control" name="mainspirit" rows="3" placeholder="Enter as many Main Spirits as you'd like"></textarea>
     </div>
     <div class="form-group">
       <label for="timeofday">Time of Day:</label>
-      <textarea type="text" class="form-control" id="timeofday" placeholder="Enter the preffered time of day to drink your drink"></textarea>
+      <textarea type="text" class="form-control" name="timeofday" placeholder="Enter the preffered time of day to drink your drink"></textarea>
     </div>
     <div class="form-group">
       <label for="directions">Directions:</label>
-      <textarea type="text" class="form-control" id="directions" rows="3" placeholder="Enter as many directions as you'd like"></textarea>
+      <textarea type="text" class="form-control" name="directions" rows="3" placeholder="Enter as many directions as you'd like"></textarea>
     </div>
     <div class="form-group">
       <label for="ingredients">Ingredients:</label>
-      <textarea type="text" class="form-control" id="ingredients" rows="3" placeholder="Enter as many ingredients as you'd like"></textarea>
+      <textarea type="text" class="form-control" name="ingredients" rows="3" placeholder="Enter as many ingredients as you'd like"></textarea>
     </div>
-    <a href="/addadrink/add"><button id="newProjectSubmitButton" type="button" class="btn btn-default">Submit</button></a>
+    <input id="newProjectSubmitButton" type="submit" class="btn btn-default" value="Submit"/>
   </form>      
 </div>
 <!-- END MENU BOXES-->
