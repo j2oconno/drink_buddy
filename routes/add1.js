@@ -8,6 +8,7 @@ exports.showField = function(req,res){
 exports.addDrink = function(req,res){
 	var form_data = req.body;
 	console.log(form_data);
+	console.log(form_data.occasions);
 
 	var newDrink = new models.Drink({
 		  "name": form_data.name,
