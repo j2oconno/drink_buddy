@@ -1,8 +1,18 @@
 var drinks = require("../drinks.json");
 var models = require('../models');
 
-exports.showField = function(req,res){
-	res.render("addadrink");
+exports.view = function(req,res){
+	var thisdata = req.form;
+	// var thistag = thisdata.input
+
+	models.Drink
+		.find()
+		.sort('-name')
+		.exec(renderAllDrinks);
+		function renderAllDrinks(err,drinks){
+			console.log(thisdata);
+			res.render("select",{"tag": "search", "drinks": drinks});
+		}
 }
 
 exports.addDrink = function(req,res){
