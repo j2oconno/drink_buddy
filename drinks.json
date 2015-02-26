@@ -55,6 +55,18 @@
             "directions": [
                 {
                     "dir": "Blend the raspberries and sugar in a food processor or blender until pureed"
+                },
+                {
+                    "dir": "Strain the raspberry puree through a sieve"
+                },
+                {
+                    "dir": "Set up 6 Champagne flutes and put about 1 tablespoon of raspberry puree in each glass"
+                },
+                {
+                    "dir": "Add Champagne to each glass"
+                },
+                {
+                    "dir": "Stir gently and serve"
                 }
             ],
             "ingredients": [
@@ -97,6 +109,22 @@
                 	"ingre": "1oz Brandy or Cognac"
                 }
             ]
+        },
+        {
+            "name": "Pears Martini",
+            "mood": "manly",
+            "image": "/images/romantic/pearsmartini.jpg",
+            "directions": [
+                {
+                    "dir": "Fill a shaker with ice cubes"
+                }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "1 bag frozen, unsweetened raspberries, thawed"
+                }
+            ]
+
         }
     ]
 }

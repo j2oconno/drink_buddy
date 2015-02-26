@@ -1,19 +1,22 @@
 [
 	{
 		"link" : "mood",
-		"image" : "/images/homemood.jpg",
+		"image" : "./images/homemood.png",
 		"name" : "by mood"
 	},
 	{
 		"link" : "occasion",
+		"image" : "./images/homeoccasion.png",
 		"name" : "by occasion"
 	},
 	{
 		"link" : "main spirit",
+		"image" : "./images/homemainspirit.png",
 		"name" : "main spirit"
 	},
 	{
 		"link" : "time of day",
+		"image" : "./images/hometimeofday.png",
 		"name" : "time of day"
 	},
 	{

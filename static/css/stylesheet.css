@@ -207,6 +207,7 @@ bottom:0;
 /* End Hard coded boxes */
 
 .indexbackground{
+    background: url("") no-repeat center center fixed; 
     background: url("..") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -236,20 +237,20 @@ body {
 
 .square-box{
     position: relative;
-    width: 100%;
+    width: 200px;
+    height: 200px;
     margin: 1em;
-    background: #C0C0C0;
-    opacity: 0.9;
-    height: 11em;
+}
+
+.square-layer{
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
 }
 
 .square-content{
     position:  absolute;
     display: table-cell;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-left:10px;
+    margin-top:10px;
     font-family: FrontBoxFont;
     font-weight: 500;
     font-size: 16pt;
@@ -257,17 +258,11 @@ body {
     width: 100%;
 }
 
-#square-image{
-    img.resize{
-    max-width:60%; /* you can use % */
-    height: 70%;
-}
-}
-
 .square-content div {
    display: table;
    width: 100%;
    height: 100%;
+   background-image: contain;
 }
 
 .square-content span {
@@ -311,4 +306,12 @@ h1, h2, h3, h4 {
     font-family: "Forum";
     font-size: 18px;
 }*/
+
+.mood-name{
+    padding: 80px 0;
+}
+
+.mood-container{
+    padding: 20px 0;
+}
 

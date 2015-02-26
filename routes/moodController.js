@@ -17,7 +17,7 @@ exports.view = function(req, res){
 					if(i===0){//skip first mood and set our first field
 					//Begin looping over other drinks' moods 
 					//set first mood field
-					drMoods.thing[0] = {"name": drinks[0]["mood"]}
+					drMoods.thing[0] = {"name": drinks[0]["mood"], "image" : drinks[0]["image"]}
 				
 					} else{
 					//Begin looping over past moods to make a non-repeating list
@@ -26,9 +26,10 @@ exports.view = function(req, res){
 								dupl = 1;
 						}
 						if(dupl===0)
-							drMoods.thing[iiii++]={"name": drinks[i]["mood"]};
+							drMoods.thing[iiii++]={"name": drinks[i]["mood"], "image" : drinks[0]["image"]};
 					}
 				}
+				console.log(drMoods);
 				res.render('boxes',drMoods);
 			}
 }
