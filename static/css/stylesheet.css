@@ -82,6 +82,7 @@
     position: relative;
     background: none;
     margin: 0px;
+    padding:50px;
 }
 
 .jumbotron:after {
@@ -160,9 +161,8 @@ ul, menu, dir {
 
 /* End Hard coded boxes */
 
-.indexbackground{
-    background: url("") no-repeat center center fixed; 
-    background: url("..") no-repeat center center fixed; 
+.loginbackground{
+    background: url("../images/occasion/girlsnightout.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -250,7 +250,24 @@ p.mood-name{
     padding: 20px 0;
 }
 
-.fave_button{
+.boxes {
+    background: rgb(125,126,125); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(14,14,14,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* IE10+ */
+    background: linear-gradient(135deg,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+span.fave_button{
     white-space: normal;
-    width: 100px;
+    padding-left:30px;
+    font-family:FrontBoxFont;
+}
+
+.recommend-image{
+    max-width:120px;
+    max-height:120px;
 }

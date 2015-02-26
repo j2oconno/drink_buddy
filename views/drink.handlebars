@@ -48,43 +48,35 @@
 <div class="container-fluid center">
       <h3 class="ChooseHead"><p>{{name}} Recipe</p></h3>
 
-<div class="row center" style="border:1px dotted blue">
-                  <div class="col-xs-6 imagerecipe" style="border:1px dotted black">
-              				<img class="img-responsive center" width="500px" src="{{image}}"/>
-              		</div>
+        <div class="row center">
+              <div class="row center">
+                <div class="col-xs-6 imagerecipe">
+              		<img class="img-responsive center" width="500px" src="{{image}}"/>
+                  <span class="btn-group-xs fave_button center" role="group">
+                        <a href="/add/{{name}}" type="button" class="btn btn-default" role="group">Add to Favorites</a>
+                  </span>
+              	</div>
 
-                  <div class="col-xs-6" style="border:1px dotted black">
-              			 <h5>INGREDIENTS</h5>
-              				  <ol class="ingredients">
-              					 {{#each ingredients}}
-              					   <li>{{ingre}}</li>
+                <div class="col-xs-6">
+              		<h5>INGREDIENTS</h5>
+              			<ol class="ingredients">
+              				{{#each ingredients}}
+              					<li>{{ingre}}</li>
               					 {{/each}}
-                        </ol>
-              			 <h5>DIRECTIONS</h5>
-              				  <ol class="directions">
-              					 {{#each directions}}
-              					   <li>{{dir}}</li>
-              					 {{/each}}
-                        </ol>
+                    </ol>
+              		<h5>DIRECTIONS</h5>
+              			<ol class="directions">
+              				{{#each directions}}
+              					 <li>{{dir}}</li>
+              				{{/each}}
+                   </ol>
                   </div>
-            </div>
-  </div>
+              </div>
+        </div>
 </div>
 
   <!-- ADD TO FAVORITES BUTTON-->
 <!-- >>>>>>> 87822116643eb3633769324fd91c7546e5e40209 -->
-
-<div class="container-fluid center">
-        <div class="row center" style="border:1px solid black">
-          <div class="col-xs-6" style="border:1px dotted black">
-              <div class="btn-group-xs fave_button center" role="group">
-                  <a href="/add/{{name}}" type="button" class="btn btn-default" role="group">Add to Favorites</a>
-                </div>
-          </div>
-            <br><br>
-          </div>
-        </div>
-</div>
 <!-- <<<<<<< HEAD
         end ADD TO FAVORITES BUTTON
 </div>
@@ -93,28 +85,30 @@
 
 <!-- >>>>>>> 87822116643eb3633769324fd91c7546e5e40209 -->
 
-  <div class="container">
+<div class="container-fluid center">
 				<h3>Other drinks you may like</h3>
-					
-<div class="container">
-  <div class = "row">
-    <div class ="col">
-          
-      <div class="row">
-            <div class="col-xs-4">
-							<a href="#"><img src="/images/romantic/orange-bliss.png" width="100px" alt="Image"></a>
-							<p><a href="#">Orange Bliss</a></p>
-						</div>
-						<div class="col-xs-4">
-							<a href="#"><img src="/images/romantic/pearsmartini.jpg" height="130px" alt="Image"></a>
-							<p><a href="#">Pears Martini</a></p>
-						</div>
-						<div class="col-xs-4">
-							<a href="#"><img src="/images/romantic/campariipaspritzer.png" width="65px" alt="Image"></a>
-							<p><a href="#">Campari Ipa Spritzer</a></p>
+
+
+      <div class="row center">
+            <div class="col-xs-4 col-xs-4 col-xs-4 center">
+  							<a href="#">
+                  <img class="recommend-image center" src="/images/romantic/orange-bliss.png" alt="Image">
+                </a>
+  							<p>Orange Bliss</p>
+  						</div>
+  						<div class="col-xs-4 col-xs-4 col-xs-4 center">
+  							<a href="#">
+                  <img class="recommend-image center" src="/images/romantic/cosmopolitan.jpg" alt="Image">
+                </a>
+  							<p>Cosmopolitan</p>
+  						</div>
+  						<div class="col-xs-4 col-xs-4 col-xs-4 center">
+  							<a href="#">
+                  <img class="recommend-image center" src="/images/romantic/bluecosmo.png" alt="Image">
+                </a>
+  							<p>Blue Cosmo</p>
 						</div>
 					</div>
-			</div>
 </div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
