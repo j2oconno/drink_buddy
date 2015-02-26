@@ -1,7 +1,7 @@
 [
 	{
 		"link" : "mood",
-		"image" : "http://lorempixel.com/400/200/people",
+		"image" : "/images/homemood.jpg",
 		"name" : "by mood"
 	},
 	{
@@ -19,5 +19,9 @@
 	{
 		"link" : "favorite",
 		"name" : "my favorites"
+	},
+	{
+		"link" : "addadrink",
+		"name" : "add a drink"
 	}
 ]
