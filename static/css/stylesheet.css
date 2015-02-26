@@ -62,8 +62,8 @@
     margin-top:90px;
 }
 
-#imagerecipe {
-    max-width:250px;
+.imagerecipe {
+    padding-left:0;
 }
 
 .MainLogo{
@@ -238,11 +238,11 @@ h1, h2, h3, h4 {
 p.mood-name{
     position:absolute;
     padding-top:35px;
-    padding-left:10px;
-    padding-right:40px;
+    padding-left:5px;
+    padding-right:10px;
     text-align: left;
     font-family: FrontBoxFont;
-    font-size:18pt;
+    font-size:16pt;
     z-index:1000;
 }
 
@@ -250,3 +250,7 @@ p.mood-name{
     padding: 20px 0;
 }
 
+.fave_button{
+    white-space: normal;
+    width: 100px;
+}

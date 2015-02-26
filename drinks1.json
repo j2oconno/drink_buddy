@@ -1,10 +1,11 @@
 [
         {
             "name": "Midnight Mint",
-            "mood": "romantic",
+            "mood": "introspective",
+            "mood_image": "../images/mood/introspective.jpg",
             "occasions": [
                 "birthday",
-                "new years eve"
+                "new year's eve"
             ],
             "main spirit": [
                 "Irish Cream",
@@ -40,10 +41,13 @@
         },
         {
             "name": "Raspberry Bellini",
-            "mood": "romantic",
+            "mood": [
+                "romantic"
+            ],
+            "mood_image": "../images/mood/romantic.jpg",
             "occasions": [
                 "birthday",
-                "new years eve"
+                "new year's eve"
             ],
             "main spirit": [
                 "Champagne"
@@ -78,10 +82,13 @@
         },
         {
             "name": "Pears Martini",
-            "mood": "relax & chill",
+            "mood": 
+            [
+                "celebratory"
+            ],
             "occasions": [
                 "birthday",
-                "new years eve"
+                "new year's eve"
             ],
             "main spirit": [
                 "Vodka"
@@ -122,10 +129,12 @@
         },
         {
             "name": "Cosmopolitan",
-            "mood": "romantic",
+            "mood": [
+                "celebratory"
+            ],
             "occasions": [
                 "birthday",
-                "new years eve"
+                "new year's eve"
             ],
             "main spirit": [
                 "Champagne"
@@ -161,53 +170,15 @@
                 }
             ]
         },
-          {
-            "name": "Tequila Sunset",
-            "mood": "romantic",
-            "occasions": [
-                "birthday",
-                "new years eve"
-            ],
-            "main spirit": [
-                "Champagne"
-            ],
-            "time of day": "after 5",
-            "image": "/images/romantic/tequiladrink.jpg",
-            "directions": [
-                {
-                    "dir": "Pour tequila into a collins glass filled with ice cubes"
-                },
-                {
-                    "dir": "Fill with orange juice and stir well"
-                },
-                {
-                    "dir": "Top with blackberry brandy and stir lightly"
-                },
-                {
-                    "dir": "Add the cherry on top and serve"
-                }
-            ],
-            "ingredients": [
-                {
-                    "ingre": "1 oz tequila"
-                },
-                {
-                    "ingre": "orange juice"
-                },
-                {
-                    "ingre": "1/2 oz blackberry brandy"
-                },
-                {
-                    "ingre": "1 cherry"
-                }
-            ]
-        },
         {
             "name": "Orange Bliss",
-            "mood": "romantic",
+            "mood": [
+                "romantic"
+            ],
+            "mood_image": "../images/mood/romantic.jpg",
             "occasions": [
                 "birthday",
-                "new years eve"
+                "new year's eve"
             ],
             "main spirit": [
                 "Champagne"
@@ -242,16 +213,19 @@
         },
         {
             "name": "Lady In Red",
-            "mood": "romantic",
+            "mood": [
+                "romantic"
+            ],
+            "mood_image": "../images/mood/romantic.jpg",
             "occasions": [
                 "birthday",
-                "new years eve"
+                "new year's eve"
             ],
             "main spirit": [
                 "Champagne"
             ],
             "time of day": "after 5",
-            "image": "/images/romantic/redlady.jpg",
+            "image": "../images/romantic/redlady.jpg",
             "directions": [
                 {
                     "dir": "Pour ingredients into a shot glass"
@@ -274,10 +248,13 @@
         },
         {
             "name": "Cranberry Vodka",
-            "mood": "romantic",
+            "mood": [
+                "romantic"
+            ],
+            "mood_image": "../images/mood/romantic.jpg",
             "occasions": [
                 "birthday",
-                "new years eve"
+                "new year's eve"
             ],
             "main spirit": [
                 "Champagne"
@@ -306,10 +283,12 @@
         },
         {
             "name": "SideCar",
-            "mood": "manly",
+            "mood": [
+                "manly"
+            ],
             "occasions": [
                 "birthday",
-                "new years eve",
+                "new year's eve",
                 "girls night out"
             ],
             "main spirit": [
@@ -341,9 +320,12 @@
         },
         {
             "name": "Pears Martini",
-            "mood": "romantic",
+            "mood": [
+                "romantic"
+            ],
+            "mood_image": "../images/mood/romantic.jpg",
             "occasions": [
-                "new years eve",
+                "new year's eve",
                 "girls night out"
             ],
             "main spirit": [
@@ -386,9 +368,12 @@
         },
         {
             "name": "Cosmopolitan",
-            "mood": "romantic",
+            "mood": [
+                "romantic"
+            ],
+            "mood_image": "../images/mood/romantic.jpg",
             "occasions": [
-                "new years eve",
+                "new year's eve",
                 "girls night out",
                 "birthday"
             ],
@@ -433,9 +418,12 @@
         },
         {
             "name": "Tequila Sunset",
-            "mood": "romantic",
+            "mood": [
+                "romantic"
+            ],
+            "mood_image": "../images/mood/romantic.jpg",
             "occasions": [
-                "new years eve",
+                "new year's eve",
                 "girls night out",
                 "birthday"
             ],
@@ -444,7 +432,7 @@
                 "Triple Sec"
             ],
             "time of day": "late night",
-            "image": "/images/romantic/pearsmartini.jpg",
+            "image": "/images/romantic/tequiladrink.jpg",
             "directions": [
                 {
                     "dir": "Shake vodka, triple sec, lime and cranberry juice vigorously in a shaker with ice"
@@ -475,7 +463,103 @@
                 {
                     "ingre": "1/2 oz cranberry juice"
                 }
-
+            ]
+        },
+        {
+            "name": "Old Fashioned",
+            "mood": [
+                "relax & chill"
+            ],
+            "occasions": [
+            ],
+            "main spirit": [
+                "Bourbon"
+            ],
+            "time of day": "evening",
+            "image": "/images/romantic/oldfashioned.jpg",
+            "directions": [
+                {
+                    "dir": "In old-fashioned glass, combine simple syrup and bitters"
+                },
+                {
+                    "dir": "Fill glass halfway with ice, then stir about a dozen times"
+                },
+                {
+                    "dir": "Squeeze orange peel over glass to extract oils, add peel to glass, and add whiskey"
+                },
+                {
+                    "dir": "Stir just until drink is cold and alcoholic bite has softened, about a dozen times"                    
+                },
+                {
+                    "dir": "Garnish with cherry, swizzle stick, and straw"
+                }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "1 teaspoon simple syrup"
+                },
+                {
+                    "ingre": "2 dashes Angostura Bitters, plus more to taste"
+                },
+                {
+                    "ingre": "1 half dollar-sized slice orange peel, including pith"
+                },
+                {
+                    "ingre": "2 ounces good-quality rye or bourbon"
+                },
+                {
+                    "ingre": "1 maraschino cherry"
+                }
+            ]
+        },
+        {
+            "name": "Adios Mother",
+            "mood": [
+                "reckless"
+            ],
+            "occasions": [
+                "birthday",
+                "new year's eve",
+                "girls night out"
+            ],
+            "main spirit": [
+                "Bourbon"
+            ],
+            "time of day": "evening",
+            "image": "/images/romantic/oldfashioned.jpg",
+            "directions": [
+                {
+                    "dir": "In old-fashioned glass, combine simple syrup and bitters"
+                },
+                {
+                    "dir": "Fill glass halfway with ice, then stir about a dozen times"
+                },
+                {
+                    "dir": "Squeeze orange peel over glass to extract oils, add peel to glass, and add whiskey"
+                },
+                {
+                    "dir": "Stir just until drink is cold and alcoholic bite has softened, about a dozen times"                    
+                },
+                {
+                    "dir": "Garnish with cherry, swizzle stick, and straw"
+                }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "1 teaspoon simple syrup"
+                },
+                {
+                    "ingre": "2 dashes Angostura Bitters, plus more to taste"
+                },
+                {
+                    "ingre": "1 half dollar-sized slice orange peel, including pith"
+                },
+                {
+                    "ingre": "2 ounces good-quality rye or bourbon"
+                },
+                {
+                    "ingre": "1 maraschino cherry"
+                }
             ]
         }
 ]
