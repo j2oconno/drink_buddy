@@ -50,19 +50,22 @@
 <!-- START BANNER -->
 <div class="jumbotron">
   <div class="container">
-    <p>Recipes by {{field}}</p>
   </div>
 </div>
 <!-- END BANNER -->
+
+    <div>
+      <h3 class="ChooseHead"><p>Recipes by {{field}}</p></h3>
+    </div>
+
 <!-- START MENU BOXES-->
-<div class="container mood-container">
-      
-      <div class="row"> 
+<div class="container-fluid square-container center">
+    <div class="row center"> 
     {{#each thing}} 
-        <a href="/{{../field}}/{{name}}">
-          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" >
-            <div style="background-image:url({{image}}); border: 1px solid black">
-              <h4 class='mood-name'>{{ name }}</h4>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" >        
+          <a href="/{{../field}}/{{name}}">
+            <div class="square-box">
+              <h4 class='mood-name'>{{name}}</h4>
             </div>
           </div>
         </a>
