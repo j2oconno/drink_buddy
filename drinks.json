@@ -1,11 +1,14 @@
 {
-    "drinks": [
+    "drinks":
+    [
         {
+            "field":"drinks",
             "name": "Midnight Mint",
-            "mood": "romantic",
+            "mood": "introspective",
+            "mood_image": "../images/mood/introspective.jpg",
             "occasions": [
                 "birthday",
-                "new years eve"
+                "new year's eve"
             ],
             "main spirit": [
                 "Irish Cream",
@@ -40,15 +43,18 @@
             ]
         },
         {
+            "field":"drinks",
             "name": "Raspberry Bellini",
-            "mood": "romantic",
+            "mood": [
+                "romantic"
+            ],
+            "mood_image": "../images/mood/romantic.jpg",
             "occasions": [
                 "birthday",
-                "new years eve"
+                "new year's eve"
             ],
             "main spirit": [
-                "Irish Cream",
-                "White Creme de Menthe"
+                "Champagne"
             ],
             "time of day": "after 5",
             "image": "/images/romantic/raspberrybellini.png",
@@ -57,30 +63,150 @@
                     "dir": "Blend the raspberries and sugar in a food processor or blender until pureed"
                 },
                 {
-                    "dir": "Strain the raspberry puree through a sieve"
+                    "dir": "Strain the raspberry puree through a sieve, and discard the seeds(optional)"
                 },
                 {
-                    "dir": "Set up 6 Champagne flutes and put about 1 tablespoon of raspberry puree in each glass"
+                    "dir": "Set up 6 Champagne flutes and put 1 tblespoon of rasberry puree in each glass"
                 },
                 {
-                    "dir": "Add Champagne to each glass"
-                },
-                {
-                    "dir": "Stir gently and serve"
+                    "dir": "Add champagne to each glass, stir gently and serve"
                 }
             ],
             "ingredients": [
                 {
                     "ingre": "1 bag frozen, unsweetened raspberries, thawed"
+                },
+                {
+                    "ingre": "2 tablespoons sugar"
+                },
+                {
+                    "ingre": "1 bottle chilled brut Champagne"
                 }
             ]
         },
         {
-            "name": "SideCar",
-            "mood": "manly",
+            "field":"drinks",
+            "name": "Orange Bliss",
+            "mood": [
+                "romantic"
+            ],
+            "mood_image": "../images/mood/romantic.jpg",
             "occasions": [
                 "birthday",
-                "new years eve",
+                "new year's eve"
+            ],
+            "main spirit": [
+                "Champagne"
+            ],
+            "time of day": "after 5",
+            "image": "/images/romantic/orange-bliss.png",
+            "directions": [
+                {
+                    "dir": "Pour tequila into a collins glass filled with ice cubes"
+                },
+                {
+                    "dir": "Fill with orange juice and stir well"
+                },
+                {
+                    "dir": "Top with blackberry brandy and stir lightly"
+                },
+                {
+                    "dir": "Add the cherry on top and serve"
+                }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "1 1/2 oz Stoli® Ohranj vodka"
+                },
+                {
+                    "ingre": "1 oz Grand Marnier® orange liqueur"
+                },
+                {
+                    "ingre": "3 1/2 oz orange juice"
+                }
+            ]
+        },
+        {
+            "field":"drinks",
+            "name": "Lady In Red",
+            "mood": [
+                "romantic"
+            ],
+            "mood_image": "../images/mood/romantic.jpg",
+            "occasions": [
+                "birthday",
+                "new year's eve"
+            ],
+            "main spirit": [
+                "Champagne"
+            ],
+            "time of day": "after 5",
+            "image": "../images/romantic/redlady.jpg",
+            "directions": [
+                {
+                    "dir": "Pour ingredients into a shot glass"
+                }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "1/2 oz peppermint schnapps"
+                },
+                {
+                    "ingre": "1/2 oz peach schnapps"
+                },
+                {
+                    "ingre": "1/2 oz vodka"
+                },
+                {
+                    "ingre": "1/2 oz grenadine syrup"
+                }
+            ]
+        },
+        {
+            "field":"drinks",
+            "name": "Cranberry Vodka",
+            "mood": [
+                "romantic"
+            ],
+            "mood_image": "../images/mood/romantic.jpg",
+            "occasions": [
+                "birthday",
+                "new year's eve"
+            ],
+            "main spirit": [
+                "Champagne"
+            ],
+            "time of day": "after 5",
+            "image": "/images/romantic/cranberryvodka.jpg",
+            "directions": [
+                {
+                    "dir": "Pour all ingredients into a 6 oz-fashioned glass half-filled with ice"
+                }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "1 oz vodka"
+                },
+                {
+                    "ingre": "4 1/2 oz cranberry juice"
+                },
+                {
+                    "ingre": "1 dash Rose's lime juice"
+                },
+                {
+                    "ingre": "1 dash orange juice"
+                }
+            ]
+        },
+        {
+            "field":"drinks",
+            "name": "SideCar",
+            "mood": [
+                "manly"
+            ],
+            "occasions": [
+                "birthday",
+                "new year's eve",
                 "girls night out"
             ],
             "main spirit": [
@@ -95,7 +221,7 @@
                     "dir": "Stir with ice"
                 },
                 {
-                	"dir": "Strain into cocktail glass"
+                    "dir": "Strain into cocktail glass"
                 }
             ],
             "ingredients": [
@@ -103,28 +229,260 @@
                     "ingre": "Juice of 1/4 Lemon"
                 },
                 {
-                	"ingre": "1oz Triple Sec"
+                    "ingre": "1oz Triple Sec"
                 },
                 {
-                	"ingre": "1oz Brandy or Cognac"
+                    "ingre": "1oz Brandy or Cognac"
                 }
             ]
         },
         {
+            "field":"drinks",
             "name": "Pears Martini",
-            "mood": "manly",
+            "mood": [
+                "romantic"
+            ],
+            "mood_image": "../images/mood/romantic.jpg",
+            "occasions": [
+                "new year's eve",
+                "girls night out"
+            ],
+            "main spirit": [
+                "Vodka"
+            ],
+            "time of day": "after 5",
             "image": "/images/romantic/pearsmartini.jpg",
             "directions": [
                 {
                     "dir": "Fill a shaker with ice cubes"
+                },
+                {
+                    "dir": "Add all ingredients"
+                },
+                {
+                    "dir": "Shake and strain into a chilled cocktail glass"
+                },
+                {
+                    "dir": "Garnish with pear"                    
+                    }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "2 Parts Absolut Pears"
+                },
+                {
+                    "ingre": "1 Part Simple Syrup"
+                },
+                {
+                    "ingre": "¾ Part Lemon Juice"
+                },
+                {
+                    "ingre": "½ Part Pear Puree"
+                },
+                {
+                    "ingre": "1 Slice Pear"
+                }
+
+            ]
+        },
+        {
+            "field":"drinks",
+            "name": "Cosmopolitan",
+            "mood": [
+                "romantic"
+            ],
+            "mood_image": "../images/mood/romantic.jpg",
+            "occasions": [
+                "new year's eve",
+                "girls night out",
+                "birthday"
+            ],
+            "main spirit": [
+                "Vodka",
+                "Triple Sec"
+            ],
+            "time of day": "late night",
+            "image": "/images/romantic/cosmopolitan.jpg",
+            "directions": [
+                {
+                    "dir": "Shake vodka, triple sec, lime and cranberry juice vigorously in a shaker with ice"
+                },
+                {
+                    "dir": "Add all ingredients"
+                },
+                {
+                    "dir": "Strain into a martini glass"
+                },
+                {
+                    "dir": "Garnish with a lime wedge on the rim, and serve"                    
+                    }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "1 oz vodka"
+                },
+                {
+                    "ingre": "1/2 oz triple sec"
+                },
+                {
+                    "ingre": "¾ Part Lemon Juice"
+                },
+                {
+                    "ingre": "1/2 oz Rose's® lime juice"
+                },
+                {
+                    "ingre": "1/2 oz cranberry juice"
+                }
+
+            ]
+        },
+        {
+            "field":"drinks",
+            "name": "Tequila Sunset",
+            "mood": [
+                "romantic"
+            ],
+            "mood_image": "../images/mood/romantic.jpg",
+            "occasions": [
+                "new year's eve",
+                "girls night out",
+                "birthday"
+            ],
+            "main spirit": [
+                "Vodka",
+                "Triple Sec"
+            ],
+            "time of day": "late night",
+            "image": "/images/romantic/tequiladrink.jpg",
+            "directions": [
+                {
+                    "dir": "Shake vodka, triple sec, lime and cranberry juice vigorously in a shaker with ice"
+                },
+                {
+                    "dir": "Add all ingredients"
+                },
+                {
+                    "dir": "Strain into a martini glass"
+                },
+                {
+                    "dir": "Garnish with a lime wedge on the rim, and serve"                    
+                    }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "1 oz vodka"
+                },
+                {
+                    "ingre": "1/2 oz triple sec"
+                },
+                {
+                    "ingre": "¾ Part Lemon Juice"
+                },
+                {
+                    "ingre": "1/2 oz Rose's® lime juice"
+                },
+                {
+                    "ingre": "1/2 oz cranberry juice"
+                }
+            ]
+        },
+        {
+            "field":"drinks",
+            "name": "Old Fashioned",
+            "mood": [
+                "relax & chill"
+            ],
+            "occasions": [
+            ],
+            "main spirit": [
+                "Bourbon"
+            ],
+            "time of day": "evening",
+            "image": "/images/romantic/oldfashioned.jpg",
+            "directions": [
+                {
+                    "dir": "In old-fashioned glass, combine simple syrup and bitters"
+                },
+                {
+                    "dir": "Fill glass halfway with ice, then stir about a dozen times"
+                },
+                {
+                    "dir": "Squeeze orange peel over glass to extract oils, add peel to glass, and add whiskey"
+                },
+                {
+                    "dir": "Stir just until drink is cold and alcoholic bite has softened, about a dozen times"                    
+                },
+                {
+                    "dir": "Garnish with cherry, swizzle stick, and straw"
                 }
             ],
             "ingredients": [
                 {
-                    "ingre": "1 bag frozen, unsweetened raspberries, thawed"
+                    "ingre": "1 teaspoon simple syrup"
+                },
+                {
+                    "ingre": "2 dashes Angostura Bitters, plus more to taste"
+                },
+                {
+                    "ingre": "1 half dollar-sized slice orange peel, including pith"
+                },
+                {
+                    "ingre": "2 ounces good-quality rye or bourbon"
+                },
+                {
+                    "ingre": "1 maraschino cherry"
                 }
             ]
-
+        },
+        {
+            "field":"drinks",
+            "name": "Adios Mother",
+            "mood": [
+                "reckless"
+            ],
+            "occasions": [
+                "birthday",
+                "new year's eve",
+                "girls night out"
+            ],
+            "main spirit": [
+                "Bourbon"
+            ],
+            "time of day": "evening",
+            "image": "/images/romantic/oldfashioned.jpg",
+            "directions": [
+                {
+                    "dir": "In old-fashioned glass, combine simple syrup and bitters"
+                },
+                {
+                    "dir": "Fill glass halfway with ice, then stir about a dozen times"
+                },
+                {
+                    "dir": "Squeeze orange peel over glass to extract oils, add peel to glass, and add whiskey"
+                },
+                {
+                    "dir": "Stir just until drink is cold and alcoholic bite has softened, about a dozen times"                    
+                },
+                {
+                    "dir": "Garnish with cherry, swizzle stick, and straw"
+                }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "1 teaspoon simple syrup"
+                },
+                {
+                    "ingre": "2 dashes Angostura Bitters, plus more to taste"
+                },
+                {
+                    "ingre": "1 half dollar-sized slice orange peel, including pith"
+                },
+                {
+                    "ingre": "2 ounces good-quality rye or bourbon"
+                },
+                {
+                    "ingre": "1 maraschino cherry"
+                }
+            ]
         }
-    ]
-}
+]}

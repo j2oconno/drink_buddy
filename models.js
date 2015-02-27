@@ -9,6 +9,7 @@ var DrinkSchema = new Mongoose.Schema({
   "main spirit": [String],
   "time of day": String,
   "image": String,
+  "mood_image": String,
   "directions": [],
   "ingredients": []
 });
@@ -19,7 +20,8 @@ var BoxesSchema = new Mongoose.Schema({
   // fields are defined here
   "link" : String,
   "name": String,
-  "image": String
+  "image": String,
+  "mood_image": String,
 });
 
 exports.Boxes = Mongoose.model('Boxes', BoxesSchema);

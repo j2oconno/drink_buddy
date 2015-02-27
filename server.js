@@ -11,6 +11,7 @@ var mongoose = require('mongoose');
 
 var add = require ('./routes/add')
 var add1 = require ('./routes/add1')
+var search = require ('./routes/search')
 
 var moodController = require("./routes/moodController");
 var occasionController = require("./routes/occasionController");
@@ -71,6 +72,7 @@ app.get("/time%20of%20day/:time/:recipe", timeController.drink);
 app.get("/addadrink", add1.showField);
 app.post("/addadrink/add",add1.addDrink);
 
+app.get("/search", search.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
