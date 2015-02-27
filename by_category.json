@@ -6,7 +6,7 @@
 	},
 	{
 		"link" : "occasion",
-		"image" : "./images/homeoccasion.png",
+		"image" : "./images/occasion2.jpg",
 		"name" : "by occasion"
 	},
 	{
@@ -21,10 +21,12 @@
 	},
 	{
 		"link" : "favorite",
+		"image" : "./images/favorite.jpg",
 		"name" : "my favorites"
 	},
 	{
 		"link" : "addadrink",
+		"image" : "./images/addadrink.jpg",
 		"name" : "add a drink"
 	}
 ]
