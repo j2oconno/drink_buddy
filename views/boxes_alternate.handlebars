@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head> 
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    	<!-- Bootstrap -->
-    	<link href="css/bootstrap.min.css" rel="stylesheet">
-    	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    	<link href="css/stylesheet.css" rel="stylesheet">
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href="css/stylesheet.css" rel="stylesheet">
 
-    	<title>{{field}}</title>
+      <title>{{field}}</title>
+      {{> tracking_code_script}}
     </head>
-    {{> tracking_code_script}}
+
+
 <body>
-
-
-
 <!-- NAVIGATION BAR -->
-
-
   <nav class="navbar navbar-default">
     <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -49,32 +46,24 @@
 <!-- START BANNER -->
 <div class="jumbotron">
   <div class="container">
+    <div class="boxHead">
+      <h3 class="ChooseHeadAlt">{{field}}:</h3>
+    </div>
   </div>
 </div>
 <!-- END BANNER -->
 
-    <div>
-      <h3 class="ChooseHead"><p>Recipes by {{field}}</p></h3>
-    </div>
-<br>
-
 <!-- START MENU BOXES-->
-<div class="container-fluid square-container center">
-    <div class="row center"> 
+<div class="container-fluid">
+    <div class="row"> 
     {{#each thing}} 
-        <div class="col-xs-6 col-md-6 col-lg-6">
-              <div class="square-box">
-                <a href="/{{../field}}/{{name}}">
-                  <p style="color:white" class="mood-name">{{name}}</p>
-                  <div class="overlay center version_a">
-                    <div class="square-content boxes">
-                    </div>
-                  </div>
-                </a>
-              </div>
-          </div>
+        <div class="col-xs-12 col-md-12 col-lg-12">
+          <a href="/{{../field}}/{{name}}">
+              <button type="button" class="btn btn-block btn-custom version_b" style="background:  #70DB70">{{name}}</button>
+          </a>
+        </div>
     {{/each}}
-      </div>
+    </div>
 </div>
 <!-- END MENU BOXES -->
 
