@@ -44,8 +44,13 @@ exports.view = function(req, res){
 					}
 				}
 			}
-				res.render('boxes',mnSpirts);
+			var x = Math.random();
+			  if(x>0.5){
+			  	res.render("boxes",mnSpirts);
+			  }else{
+				res.render('boxes_alternate',mnSpirts);
 			}
+		}
 }
 
 exports.select = function(req,res){

@@ -30,8 +30,13 @@ exports.view = function(req, res){
 					}
 				}
 				console.log(drMoods);
-				res.render('boxes',drMoods);
+				var x = Math.random();
+			  if(x>0.5){
+			  	res.render("boxes",drMoods);
+			  }else{
+				res.render('boxes_alternate',drMoods);
 			}
+		}
 }
 
 exports.select = function(req,res){

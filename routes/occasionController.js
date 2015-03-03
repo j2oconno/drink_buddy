@@ -45,9 +45,15 @@ exports.view = function(req, res){
 					}
 				}
 			}
-				res.render('boxes',occAsions);
+				var x = Math.random();
+			  if(x>0.5){
+			  	res.render("boxes",occAsions);
+			  }else{
+				res.render('boxes_alternate',occAsions);
 			}
+		}
 }
+
 
 exports.select = function(req,res){
 	//Find all drinks with this occasions
