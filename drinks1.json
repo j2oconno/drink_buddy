@@ -122,41 +122,6 @@
             ]
         },
         {
-            "name": "Lady In Red",
-            "mood": [
-                "romantic"
-            ],
-            "mood_image": "../images/mood/romantic.jpg",
-            "occasions": [
-                "birthday",
-                "new year's eve"
-            ],
-            "main spirit": [
-                "Champagne"
-            ],
-            "time of day": "after 5",
-            "image": "../images/romantic/redlady.jpg",
-            "directions": [
-                {
-                    "dir": "Pour ingredients into a shot glass"
-                }
-            ],
-            "ingredients": [
-                {
-                    "ingre": "1/2 oz peppermint schnapps"
-                },
-                {
-                    "ingre": "1/2 oz peach schnapps"
-                },
-                {
-                    "ingre": "1/2 oz vodka"
-                },
-                {
-                    "ingre": "1/2 oz grenadine syrup"
-                }
-            ]
-        },
-        {
             "name": "Cranberry Vodka",
             "mood": [
                 "romantic"
@@ -231,7 +196,7 @@
         {
             "name": "Pears Martini",
             "mood": [
-                "romantic"
+                "celebratory"
             ],
             "mood_image": "../images/mood/romantic.jpg",
             "occasions": [
