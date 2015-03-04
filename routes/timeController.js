@@ -30,6 +30,7 @@ exports.view = function(req, res){
 					}
 				}
 				var x = Math.random();
+				console.log(x);
 			  if(x>0.5){
 			  	res.render("boxes",dTimes);
 			  }else{
@@ -62,10 +63,6 @@ exports.drink = function(req,res){
 		.exec(renderThisDrink);
 		function renderThisDrink(err,drink){
 			if(err) console.log(err);
-			console.log(drink);
-			console.log(drink.ingredients);
-			var D = drink[0];
-			console.log(D.ingredients[0]);
 			res.render("drink",drink[0])
 		}
 

@@ -15,7 +15,6 @@ exports.view = function(req, res){
 				var iiii=1;//index of passing object
 				//Begin looping through all drinks and create list of occasionss
 				//set first occasions field
-				console.log(drinks);
 				occAsions.thing[0] = {"name": drinks[0]["occasions"][0]}
 				for(i=0; i<drinks.length; i++){//loops through all drinks
 					var len = drinks[i]["occasions"].length //length of this drinks "occasions" field
@@ -46,6 +45,7 @@ exports.view = function(req, res){
 				}
 			}
 				var x = Math.random();
+				console.log(x);
 			  if(x>0.5){
 			  	res.render("boxes",occAsions);
 			  }else{
@@ -64,7 +64,6 @@ exports.select = function(req,res){
 			.sort()
 			.exec(renderDrinksbyOccasion);
 			function renderDrinksbyOccasion(err,drinks){
-				console.log(drinks);
 				res.render("select",{"mainLink":"occasion", "tag" : thisocca, "drinks": drinks})
 			}
 }
@@ -73,14 +72,12 @@ exports.drink = function(req,res){
 	var thisdrink = req.params.recipe;
 	//---------------------Start new logic using mongooseDB
 	//Want to pass the drink object
-	console.log(thisdrink);
 	models.Drink
 		.find({"name":thisdrink})
 		.sort()
 		.exec(renderThisDrink);
 		function renderThisDrink(err,drink){
 			if(err)console.log(err);
-			console.log(drink);
 			res.render("drink",drink[0])
 		}
 

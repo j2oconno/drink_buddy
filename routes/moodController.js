@@ -29,8 +29,8 @@ exports.view = function(req, res){
 							drMoods.thing[iiii++]={"name": drinks[i]["mood"], "image" : drinks[0]["image"]};
 					}
 				}
-				console.log(drMoods);
 				var x = Math.random();
+				console.log(x);
 			  if(x>0.5){
 			  	res.render("boxes",drMoods);
 			  }else{
