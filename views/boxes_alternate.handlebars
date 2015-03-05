@@ -46,12 +46,14 @@
 <!-- START BANNER -->
 <div class="jumbotron">
   <div class="container">
-    <div class="boxHead">
-      <h3 class="ChooseHeadAlt">{{field}}:</h3>
-    </div>
   </div>
 </div>
 <!-- END BANNER -->
+
+    <div>
+      <h3 class="ChooseHead"><p>Recipes by {{field}}</p></h3>
+    </div>
+<br>
 
 <!-- START MENU BOXES-->
 <div class="container-fluid">
@@ -59,7 +61,7 @@
     {{#each thing}} 
         <div class="col-xs-12 col-md-12 col-lg-12">
           <a href="/{{../field}}/{{name}}">
-              <button type="button" class="btn btn-block btn-custom version_b" style="background:  #70DB70">{{name}}</button>
+              <button type="button" class="btn btn-block btn-custom version_b">{{name}}</button>
           </a>
         </div>
     {{/each}}
@@ -79,7 +81,7 @@
   <script src="js/jquery-1.11.0.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="/js/wTrack.js"></script>
+  <script src="js/wTrack.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script type="text/javascript" src="/scripts/handlebars-0.9.0.pre.4.js" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

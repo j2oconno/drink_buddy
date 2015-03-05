@@ -81,6 +81,132 @@
             ]
         },
         {
+            "name": "Pears Martini",
+            "mood": "relax & chill",
+            "occasions": [
+                "birthday",
+                "new years eve"
+            ],
+            "main spirit": [
+                "Vodka"
+            ],
+            "time of day": "after 5",
+            "image": "/images/romantic/pearsmartini.jpg",
+            "directions": [
+                {
+                    "dir": "Fill a shake with ice cubes"
+                },
+                {
+                    "dir": "Add all ingredients"
+                },
+                {
+                    "dir": "Shake and strain into a chilled cocktail glass"
+                },
+                {
+                    "dir": "Garnish with pear"
+                }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "2 Parts Absolut Pears"
+                },
+                {
+                    "ingre": "1 Part Simple Syrup"
+                },
+                                {
+                    "ingre": "3/4 Part Lemon Juice"
+                },
+                                {
+                    "ingre": "1/2 Part Pear Puree"
+                },
+                {
+                    "ingre": "1 Slice Pear"
+                }
+            ]
+        },
+        {
+            "name": "Cosmopolitan",
+            "mood": "celebratory",
+            "occasions": [
+                "birthday",
+                "new years eve"
+            ],
+            "main spirit": [
+                "Champagne"
+            ],
+            "time of day": "after 5",
+            "image": "/images/romantic/cosmopolitan.jpg",
+            "directions": [
+                {
+                    "dir": "Fill a shake with ice cubes"
+                },
+                {
+                    "dir": "Add all ingredients"
+                },
+                {
+                    "dir": "Shake and strain into a chilled cocktail glass"
+                },
+                {
+                    "dir": "Garnish with pear"
+                }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "1 oz vodka"
+                },
+                {
+                    "ingre": "1/2 oz triple sec"
+                },
+                                {
+                    "ingre": "1/2 oz Rose's lime juice"
+                },
+                                {
+                    "ingre": "1/2 oz cranberry juice"
+                }
+            ]
+        },
+          {
+            "name": "Tequila Sunset",
+            "mood": "romantic",
+            "occasions": [
+                "birthday",
+                "new years eve"
+            ],
+            "main spirit": [
+                "Champagne"
+            ],
+            "time of day": "after 5",
+            "image": "/images/romantic/tequiladrink.jpg",
+            "directions": [
+                {
+                    "dir": "Pour tequila into a collins glass filled with ice cubes"
+                },
+                {
+                    "dir": "Fill with orange juice and stir well"
+                },
+                {
+                    "dir": "Top with blackberry brandy and stir lightly"
+                },
+                {
+                    "dir": "Add the cherry on top and serve"
+                }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "1 oz tequila"
+                },
+                {
+                    "ingre": "orange juice"
+                },
+                {
+                    "ingre": "1/2 oz blackberry brandy"
+                },
+                {
+                    "ingre": "1 cherry"
+                }
+            ]
+        },
+        {
             "name": "Orange Bliss",
             "mood": [
                 "romantic"
@@ -190,153 +316,6 @@
                 },
                 {
                 	"ingre": "1oz Brandy or Cognac"
-                }
-            ]
-        },
-        {
-            "name": "Pears Martini",
-            "mood": [
-                "celebratory"
-            ],
-            "mood_image": "../images/mood/romantic.jpg",
-            "occasions": [
-                "new year's eve",
-                "girls night out"
-            ],
-            "main spirit": [
-                "Vodka"
-            ],
-            "time of day": "after 5",
-            "image": "/images/romantic/pearsmartini.jpg",
-            "directions": [
-                {
-                    "dir": "Fill a shaker with ice cubes"
-                },
-                {
-                    "dir": "Add all ingredients"
-                },
-                {
-                    "dir": "Shake and strain into a chilled cocktail glass"
-                },
-                {
-                    "dir": "Garnish with pear"                    
-                    }
-            ],
-            "ingredients": [
-                {
-                    "ingre": "2 Parts Absolut Pears"
-                },
-                {
-                    "ingre": "1 Part Simple Syrup"
-                },
-                {
-                    "ingre": "¾ Part Lemon Juice"
-                },
-                {
-                    "ingre": "½ Part Pear Puree"
-                },
-                {
-                    "ingre": "1 Slice Pear"
-                }
-
-            ]
-        },
-        {
-            "name": "Cosmopolitan",
-            "mood": [
-                "romantic"
-            ],
-            "mood_image": "../images/mood/romantic.jpg",
-            "occasions": [
-                "new year's eve",
-                "girls night out",
-                "birthday"
-            ],
-            "main spirit": [
-                "Vodka",
-                "Triple Sec"
-            ],
-            "time of day": "late night",
-            "image": "/images/romantic/cosmopolitan.jpg",
-            "directions": [
-                {
-                    "dir": "Shake vodka, triple sec, lime and cranberry juice vigorously in a shaker with ice"
-                },
-                {
-                    "dir": "Add all ingredients"
-                },
-                {
-                    "dir": "Strain into a martini glass"
-                },
-                {
-                    "dir": "Garnish with a lime wedge on the rim, and serve"                    
-                    }
-            ],
-            "ingredients": [
-                {
-                    "ingre": "1 oz vodka"
-                },
-                {
-                    "ingre": "1/2 oz triple sec"
-                },
-                {
-                    "ingre": "¾ Part Lemon Juice"
-                },
-                {
-                    "ingre": "1/2 oz Rose's® lime juice"
-                },
-                {
-                    "ingre": "1/2 oz cranberry juice"
-                }
-
-            ]
-        },
-        {
-            "name": "Tequila Sunset",
-            "mood": [
-                "romantic"
-            ],
-            "mood_image": "../images/mood/romantic.jpg",
-            "occasions": [
-                "new year's eve",
-                "girls night out",
-                "birthday"
-            ],
-            "main spirit": [
-                "Vodka",
-                "Triple Sec"
-            ],
-            "time of day": "late night",
-            "image": "/images/romantic/tequiladrink.jpg",
-            "directions": [
-                {
-                    "dir": "Shake vodka, triple sec, lime and cranberry juice vigorously in a shaker with ice"
-                },
-                {
-                    "dir": "Add all ingredients"
-                },
-                {
-                    "dir": "Strain into a martini glass"
-                },
-                {
-                    "dir": "Garnish with a lime wedge on the rim, and serve"                    
-                    }
-            ],
-            "ingredients": [
-                {
-                    "ingre": "1 oz vodka"
-                },
-                {
-                    "ingre": "1/2 oz triple sec"
-                },
-                {
-                    "ingre": "¾ Part Lemon Juice"
-                },
-                {
-                    "ingre": "1/2 oz Rose's® lime juice"
-                },
-                {
-                    "ingre": "1/2 oz cranberry juice"
                 }
             ]
         },

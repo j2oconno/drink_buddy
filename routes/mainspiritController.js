@@ -64,7 +64,7 @@ exports.select = function(req,res){
 			.sort()
 			.exec(renderDrinksbySpirit);
 			function renderDrinksbySpirit(err,drinks){
-				console.log(drinks);
+				// console.log(drinks);
 				res.render("select",{"mainLink":"main spirit", "tag" : thisspirit, "drinks": drinks})
 			}
 }
@@ -79,7 +79,7 @@ exports.drink = function(req,res){
 		.sort()
 		.exec(renderThisDrink);
 		function renderThisDrink(err,drink){
-			console.log(drink);
+			// console.log(drink);
 			res.render("drink",drink[0])
 		}
 }

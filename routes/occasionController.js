@@ -58,7 +58,7 @@ exports.view = function(req, res){
 exports.select = function(req,res){
 	//Find all drinks with this occasions
 		var thisocca = req.params.occa;
-		console.log(thisocca);
+		// console.log(thisocca);
 		models.Drink
 			.find({"occasions": thisocca})
 			.sort()
