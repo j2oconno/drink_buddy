@@ -7,7 +7,6 @@ exports.view = function(req, res){
 			.exec(renderTimes);
 			function renderTimes(err,drinks){
 				if(err) console.log(err);
-				console.log(drinks);
 				var drMoods = {field:"mood", thing:[]};
 				var dupl = 0;
 				var iiii=1;//index of passing object
@@ -62,6 +61,7 @@ exports.drink = function(req,res){
 		.exec(renderThisDrink);
 		function renderThisDrink(err,drink){
 			if(err) console.log(err);
+			console.log(drink);
 			res.render("drink",drink[0])
 		}
 
