@@ -126,10 +126,7 @@
         },
         {
             "name": "Cosmopolitan",
-            "mood": [
-                "introspective",
-                "celebratory"
-            ],
+            "mood": "celebratory",
             "occasions": [
                 "birthday",
                 "new years eve"
