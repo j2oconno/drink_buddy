@@ -2445,6 +2445,26 @@ fieldset[disabled] .btn-warning.active {
   border-color: #d43f3a;
 }
 
+.btn-grey {
+
+  background-color: hsl(0, 0%, 73%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ededed", endColorstr="#bababa");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#ededed), to(#bababa));
+  background-image: -moz-linear-gradient(top, #ededed, #bababa);
+  background-image: -ms-linear-gradient(top, #ededed, #bababa);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ededed), color-stop(100%, #bababa));
+  background-image: -webkit-linear-gradient(top, #ededed, #bababa);
+  background-image: -o-linear-gradient(top, #ededed, #bababa);
+  background-image: linear-gradient(#ededed, #bababa);
+  border-color: #bababa #bababa hsl(0, 0%, 68%);
+  color: #333 !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33);
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
 .btn-danger:hover,
 .btn-danger:focus,
 .btn-danger:active,
@@ -2743,6 +2763,9 @@ input[type="button"].btn-block {
 
 .glyphicon-heart:before {
   content: "\e005";
+}
+
+.glyphicon-heart{
 }
 
 .glyphicon-star:before {
