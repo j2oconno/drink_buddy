@@ -26,5 +26,6 @@ exports.showFavorite = function(req, res){
 		};
 	};
 
+	console.log(my_favorite_recipe_array);
 	res.render("add", my_favorite_recipe_array);
 }
