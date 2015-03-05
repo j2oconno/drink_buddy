@@ -3,11 +3,11 @@ var models = require('../models');
 exports.view = function(req, res){
 	models.Drink
 			.find()
-			.sort()
+			.sort('mood')
 			.exec(renderTimes);
 			function renderTimes(err,drinks){
 				if(err) console.log(err);
-				// console.log(drinks);
+				console.log(drinks);
 				var drMoods = {field:"mood", thing:[]};
 				var dupl = 0;
 				var iiii=1;//index of passing object
@@ -29,8 +29,8 @@ exports.view = function(req, res){
 							drMoods.thing[iiii++]={"name": drinks[i]["mood"], "image" : drinks[0]["image"]};
 					}
 				}
+				console.log(drMoods);
 				var x = Math.random();
-				console.log(x);
 			  if(x>0.5){
 			  	res.render("boxes",drMoods);
 			  }else{
