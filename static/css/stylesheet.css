@@ -40,6 +40,7 @@
         width: 250px;
     }
 }
+
 .navbar .navbar-form {
     padding-top: 0;
     padding-bottom: 0;
@@ -268,7 +269,49 @@ div.fave_button{
     font-family:FrontBoxFont;
 }
 
+.row-recommend{
+    margin:0 auto;
+    text-align: center;
+}
+
 .recommend-image{
     max-width:120px;
     max-height:120px;
+}
+
+.container-add{
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.container-footer{
+    position:fixed;
+    width:100%;
+    bottom:0;
+    background:#555555;
+    height:60px;
+    font-family: ChooseFont;
+}
+
+.container-ingredients{
+    background:#C4C3D0;
+    color:#777777;
+    border-radius:20px;
+    padding:10px;
+    margin:8px;
+}
+
+.container-directions{
+    background:#C4C3D0;
+    color:#777777;
+    border-radius:20px;
+    padding:10px;
+    margin:8px;
+}
+
+.container-recommend{
+    padding-bottom:100px;
+    background:#ededed;
+    text-align:center;
 }
