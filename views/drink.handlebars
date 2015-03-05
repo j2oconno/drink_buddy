@@ -43,69 +43,100 @@
 
 <!-- END NAVIGATION BAR -->
 
-<div class="container-fluid center">
-      <h3 class="ChooseHead"><p>{{name}} Recipe</p></h3>
-
-        <div class="row center">
-              <div class="row center">
-                <div class="col-xs-12 imagerecipe">
-              		<div class="row center">
-                    <img class="img-responsive center" src="{{image}}" width="250px"/>
+<div class="container center">
+      <p style="font-family:FrontBoxFont; font-size:30pt; text-align:center;">{{name}} Recipe</p>
+          <div class="row center">
+              <div class="col-xs-12 imagerecipe">
+              	<div class="row center">
+                  <img class="img-responsive center" src="{{image}}" width="250px"/>
+                </div>
+                <div class="row center">
+                  <div class="btn-group-xs fave_button center" role="group">
+                      <a href="/add/{{name}}" type="button" class="btn btn-default" role="group">Add to Favorites</a>
                   </div>
-                  <div class="row center">
-                    <div class="btn-group-xs fave_button center" role="group">
-                          <a href="/add/{{name}}" type="button" class="btn btn-default" role="group">Add to Favorites</a>
-                    </div>
-                  </div>
-              	</div>
-              </div>
-
-              <div class="row center">
-                <div class="col-xs-12 center">
-              		<h5>INGREDIENTS</h5>
-              			<ol class="ingredients">
-              				{{#each ingredients}}
-              					<li>{{ingre}}</li>
-              					 {{/each}}
-                    </ol>
-              		<h5>DIRECTIONS</h5>
-              			<ol class="directions">
-              				{{#each directions}}
-              					 <li>{{dir}}</li>
-              				{{/each}}
-                   </ol>
                 </div>
               </div>
+          </div>
+</div> <!-- container-->
+
+<div class="container center">
+    <div class="row center">
+        <p class="container-ingredients">INGREDIENTS</p>
+          <ol class="ingredients">
+            {{#each ingredients}}
+              <li>{{ingre}}</li>
+            {{/each}}
+          </ol>
+    </div>
+  <div class="row center">
+        <p class="container-directions">DIRECTIONS</p>
+          <ol>
+            {{#each directions}}
+              <li>{{dir}}</li>
+            {{/each}}
+          </ol>
+  </div>
+</div>
+
+
+<div class="container center container-recommend">
+<br>
+        <p style="font-family:FrontBoxFont; font-size:20pt">Other drinks you may like</p>
+
+      <div class="row row-recommend">
+            <div class="col-xs-4 center">
+  							<a style="color:black" href="#">
+                  <div class="row row-recommend">
+                    <div class="col">
+                      <img class="recommend-image" src="/images/romantic/orange-bliss.png" alt="Image">
+                    </div>
+                  </div>
+                  <div class="row row-recommend">
+                    <div class="col">
+    							   <p>Orange Bliss</p>
+                   </div>
+                 </div>
+                </a>
+  					</div>
+  					<div class="col-xs-4 center">
+                <a style="color:black" href="#">
+                  <div class="row row-recommend" >
+                    <div class="col">
+                      <img class="recommend-image" src="/images/romantic/bluecosmo.png" alt="Image">
+                    </div>
+                  </div>
+                  <div class="row row-recommend">
+                    <div class="col">
+                     <p>Blue Cosmo</p>
+                   </div>
+                 </div>
+                </a>
+            </div>
+  					<div class="col-xs-4 center">
+                <a style="color:black" href="#">
+                  <div class="row row-recommend">
+                    <div class="col">
+                      <img class="recommend-image" src="/images/romantic/southernmargarita.png" alt="Image">
+                    </div>
+                  </div>
+                  <div class="row row-recommend">
+                    <div class="col">
+                     <p>Margarita</p>
+                   </div>
+                 </div>
+                </a>
+            </div>
+			</div>
+</div>
+
+<!-- START FOOTER -->
+
+<footer>
+        <div class="container-footer center">
+          <p class="text-muted center">Copyright 2015 &copy; Rachel Kim, Jason O'Connor, Mikaela Oen</p>
         </div>
-</div>
-
-
-
-<div class="container-fluid center">
-				<h3>Other drinks you may like</h3>
-
-
-      <div class="row center">
-            <div class="col-xs-4 col-xs-4 col-xs-4 center">
-  							<a href="#">
-                  <img class="recommend-image center" src="/images/romantic/orange-bliss.png" alt="Image">
-                </a>
-  							<p>Orange Bliss</p>
-  						</div>
-  						<div class="col-xs-4 col-xs-4 col-xs-4 center">
-  							<a href="#">
-                  <img class="recommend-image center" src="/images/romantic/cosmopolitan.jpg" alt="Image">
-                </a>
-  							<p>Cosmopolitan</p>
-  						</div>
-  						<div class="col-xs-4 col-xs-4 col-xs-4 center">
-  							<a href="#">
-                  <img class="recommend-image center" src="/images/romantic/bluecosmo.png" alt="Image">
-                </a>
-  							<p>Blue Cosmo</p>
-						</div>
-					</div>
-</div>
+</footer>
+<!-- END FOOTER-->
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/jquery-1.11.0.js"></script>
