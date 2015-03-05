@@ -32,5 +32,8 @@ function initializePage(timeStart) {
       time_elapsed: Math.floor((new Date().getTime())/1000)-timeStart
     });
   })
-
+  $(".version_b").mouseover(function(){
+    console.log("Rolled Over!");
+    $(this).toggleClass("active");
+  })
 }
