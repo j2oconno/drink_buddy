@@ -132,7 +132,8 @@
                 "new year's eve"
             ],
             "main spirit": [
-                "Champagne"
+                "Vodka",
+                "Triple Sec"
             ],
             "time of day": "after five",
             "image": "/images/romantic/cosmopolitan.jpg",
@@ -173,7 +174,8 @@
                 "christmas"
             ],
             "main spirit": [
-                "Champagne"
+                "Tequila",
+                "Brandy"
             ],
             "time of day": "after five",
             "image": "/images/romantic/tequiladrink.jpg",
@@ -217,7 +219,8 @@
                 "new year's eve"
             ],
             "main spirit": [
-                "Champagne"
+                "Vodka",
+                "Grand Marnier®"
             ],
             "time of day": "after five",
             "image": "/images/romantic/orange-bliss.png",
@@ -258,7 +261,7 @@
                 "new year's eve"
             ],
             "main spirit": [
-                "Champagne"
+                "Vodka"
             ],
             "time of day": "after five",
             "image": "/images/romantic/cranberryvodka.jpg",
@@ -415,6 +418,186 @@
                 },
                 {
                     "ingre": "1 maraschino cherry"
+                }
+            ]
+        },
+        {
+            "name": "Jack&Coke",
+            "mood": [
+                "manly"
+            ],
+            "occasions": [
+                "birthday",
+                "new year's eve",
+                "everyday"
+            ],
+            "main spirit": [
+                "Jack Daniels"
+            ],
+            "time of day": "after 5",
+            "image": "/images/jackandcoke.jpg",
+            "directions": [
+                {
+                    "dir": "Fill glass with Ice"
+                },
+                {
+                    "dir": "Pour over Jack Daniels"
+                },
+                {
+                    "dir": "Add Coke for taste"
+                }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "3oz Jack Daniels"
+                },
+                {
+                    "ingre": "5oz Coka-Cola"
+                },
+                {
+                    "ingre": "Ice"
+                }
+            ]
+        },
+        {
+            "name": "Between the Sheets",
+            "mood": [
+                "manly"
+            ],
+            "occasions": [
+                "birthday",
+                "new year's eve",
+                "girls night out"
+            ],
+            "main spirit": [
+                "Hennessy VS",
+                "Ten Cane Rum",
+                "Orange Curacao"
+            ],
+            "time of day": "after five",
+            "image": "/images/BetweenTheSheets.jpg",
+            "directions": [
+                {
+                    "dir": "Add all ingredients to shaker tin with Ice"
+                },
+                {
+                    "dir": "Shake until chilled then strain into glass"
+                },
+                {
+                    "dir": "Garnish with Lemon Twist"
+                }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "1oz Hennessy VS or Privilage"
+                },
+                {
+                    "ingre": "1oz Ten Can Rum"
+                },
+                {
+                    "ingre": "1oz Orange Curacao"
+                },
+                {
+                    "ingre": "1/2oz Fresh Lemon Juice"
+                },
+                {
+                    "ingre": "Lemon Twist for Garnish"
+                }
+            ]
+        },
+        {
+            "name": "Blue Cosmo",
+            "mood": [
+                "introspective"
+            ],
+            "occasions": [
+                "birthday",
+                "new year's eve",
+                "girls night out"
+            ],
+            "main spirit": [
+                "Absolut Citron",
+                "Blue Curacao"
+            ],
+            "time of day": "after five",
+            "image": "/images/romantic/bluecosmo.png",
+            "directions": [
+                {
+                    "dir": "Add all ingredients to shaker tin with Ice"
+                },
+                {
+                    "dir": "Shake until chilled then strain into glass"
+                },
+                {
+                    "dir": "Garnish with Orange Twist"
+                }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "2oz Absolut Citron"
+                },
+                {
+                    "ingre": "1.5oz White Cranberry Juice"
+                },
+                {
+                    "ingre": "1/2oz Blue Curacao"
+                },
+                {
+                    "ingre": "1/4oz Fresh Lemon Juice"
+                },
+                {
+                    "ingre": "Orange Twist for Garnish"
+                }
+            ]
+        },
+        {
+            "name": "Margarita",
+            "mood": [
+                "celebratory"
+            ],
+            "occasions": [
+                "birthday",
+                "new year's eve",
+                "girls night out"
+            ],
+            "main spirit": [
+                "Tequila",
+                "Triple Sec"
+            ],
+            "time of day": "after five",
+            "image": "/images/romantic/southernmargarita.png",
+            "directions": [
+                {
+                    "dir": "Add all ingredients to cocktail shaker with Ice"
+                },
+                {
+                    "dir": "Shake until chilled"
+                },
+                {
+                    "dir": "If desired, salt the rim of the glass"
+                },
+                {
+                    "dir": "Pour contents, with ice, into glass"
+                },
+                {
+                    "dir": "Garnish with Orange Twist"
+                }
+            ],
+            "ingredients": [
+                {
+                    "ingre": "1 1/2oz Tequila"
+                },
+                {
+                    "ingre": "1/2oz Triple Sec"
+                },
+                {
+                    "ingre": "1oz Fresh Lime Juice"
+                },
+                {
+                    "ingre": "Lime Wedge for Garnish"
+                },
+                {
+                    "ingre": "Salt or sugar to rim the glass"
                 }
             ]
         }
