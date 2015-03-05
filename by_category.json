@@ -1,15 +1,5 @@
 [
 	{
-		"link" : "favorite",
-		"image" : "./images/favorite.jpg",
-		"name" : "my favorites"
-	},
-	{
-		"link" : "addadrink",
-		"image" : "./images/addadrink.jpg",
-		"name" : "add a drink"
-	},
-	{
 		"link" : "mood",
 		"image" : "./images/homemood.png",
 		"name" : "by mood"
