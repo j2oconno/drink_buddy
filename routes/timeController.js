@@ -29,9 +29,16 @@ exports.view = function(req, res){
 							dTimes.thing[iiii++]={"name": drinks[i]["time of day"]};
 					}
 				}
-				res.render('boxes',dTimes);
+				var x = Math.random();
+				console.log(x);
+			  if(x>0.5){
+			  	res.render("boxes",dTimes);
+			  }else{
+				res.render('boxes_alternate',dTimes);
 			}
+		}
 }
+
 
 exports.select = function(req,res){
 	//Find all drinks with this time of day
@@ -56,10 +63,6 @@ exports.drink = function(req,res){
 		.exec(renderThisDrink);
 		function renderThisDrink(err,drink){
 			if(err) console.log(err);
-			console.log(drink);
-			console.log(drink.ingredients);
-			var D = drink[0];
-			console.log(D.ingredients[0]);
 			res.render("drink",drink[0])
 		}
 
