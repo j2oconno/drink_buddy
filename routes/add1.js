@@ -7,8 +7,8 @@ exports.showField = function(req,res){
 
 exports.addDrink = function(req,res){
 	var form_data = req.body;
-	// console.log(form_data);
-	console.log(form_data.occasions);
+	console.log(form_data);
+	console.log(form_data.directions);
 	var ocCasions = {};
 	var mainSpt = {};
 	var iii=1;
@@ -33,7 +33,7 @@ exports.addDrink = function(req,res){
 	// 	}
 	// }
 
-	console.log(ocCasions);
+	// console.log(ocCasions);
 	var newDrink = new models.Drink({
 		  "name": form_data.name,
 		  "mood": form_data.mood,
@@ -41,14 +41,14 @@ exports.addDrink = function(req,res){
 		  "main spirit": form_data.mainspirit,
 		  "time of day": form_data.timeofday,
 		  "image": form_data.image_url,
-		  "directions": form_data.directions,
-		  "ingredients": form_data.ingredients
+		  "directions": [{"dir":form_data.directions}],
+		  "ingredients": [{"ingre":form_data.ingredients}],
 	});
 
 	newDrink.save(afterSaving);
 	function afterSaving(err){
 		if(err)console.log(err);
-		// console.log(newDrink);
+		console.log(newDrink);
 		res.redirect('addadrink');
 	}
 }

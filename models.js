@@ -10,8 +10,8 @@ var DrinkSchema = new Mongoose.Schema({
   "time of day": String,
   "image": String,
   "mood_image": String,
-  "directions": [],
-  "ingredients": []
+  "directions": {},
+  "ingredients": {}
 });
 
 exports.Drink = Mongoose.model('Drink', DrinkSchema);
