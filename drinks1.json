@@ -85,7 +85,7 @@
             "mood": "relax & chill",
             "occasions": [
                 "birthday",
-                "new years eve"
+                "christmas"
             ],
             "main spirit": [
                 "Vodka"
@@ -129,7 +129,7 @@
             "mood": "celebratory",
             "occasions": [
                 "birthday",
-                "new years eve"
+                "new year's eve"
             ],
             "main spirit": [
                 "Champagne"
@@ -170,7 +170,7 @@
             "mood": "romantic",
             "occasions": [
                 "birthday",
-                "new years eve"
+                "christmas"
             ],
             "main spirit": [
                 "Champagne"
@@ -325,6 +325,8 @@
                 "relax & chill"
             ],
             "occasions": [
+                "birthday",
+                "new year's eve"
             ],
             "main spirit": [
                 "Bourbon"
