@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+      <!-- Bootstrap -->
+      <link href="/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href="/css/stylesheet.css" rel="stylesheet">
+
+      <title>{{tag}} Results</title>
+      {{> tracking_code_script}}
+    </head>
+
+<body>
+
+<!-- NAVIGATION BAR -->
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+     <div class="navbar-header">
+        <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></span><span class="sr-only">(current)</span></a>
+            <form id="search-bar" class="navbar-form pull-left" role="search" action="/search">
+            <div class="input-group">
+               <input name= "input" id="input" type="text" class="form-control" placeholder="Search">
+               <div class="input-group-btn">
+                  <button id="searchButton" value="Submit" type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+               </div>
+            </div>
+         </form>
+      
+      <ul class="nav navbar-nav navbar-right pull-right" style="padding-right:20px;">
+        <li><a href="/login.html"> Sign In</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<!-- END NAVIGATION BAR -->
+
+
+<!-- START BANNER -->
+<div class="jumbotron">
+  <div class="container">
+  </div>
+</div>
+<!-- END BANNER -->
+    <div>
+      <h3 class="ChooseHead"><p>Recipes for your {{tag}}</p></h3>
+    </div>
+<br>
+<!-- START DRINK RECIPE BOXES-->
+<div class="container">
+  <div class="row" class="center"> 
+      {{#each drinks}}
+        
+      <div class="col-xs-6 col-md-6 col-lg-6">
+                    <div class="square-box">
+                      <a href="/mood/romantic/{{name}}">
+                        <div class="overlay center">
+                          <div class="square-content center">
+                              <img class="center" src="{{image}}" width="125px" height="125px"/>
+                                </a>
+                              <p align="center">{{name}}</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+<!-- 
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="border:2pt solid black;">
+            <div class="square-box">
+              <a href="/{{../mainLink}}/{{../tag}}/{{name}}">
+                <div class="square-content" style="background-color:#FFFFFF; border:2pt solid green">
+                      <img src="{{image}}" width="100" class="img-responsive center" alt="Drink Image!"/>
+                </div>
+              </a>
+            </div>
+        <div class="row" style="border:2pt solid red;">
+          <div class="col" style="border:2pt solid blue;">
+            <span><h4>{{name}}</h4></span>
+          </div>
+        </div>
+      </div> -->
+      {{/each}}
+  </div>
+</div>
+<!-- END DRINK RECIPE BOXES -->
+
+<!-- START FOOTER -->
+
+
+<!-- END FOOTER-->
+
+  <script src="/js/jquery-1.11.0.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/wTrack.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</body>
+
+</html>

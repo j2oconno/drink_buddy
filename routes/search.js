@@ -11,7 +11,7 @@ exports.view = function(req,res){
 		.exec(renderAllDrinks);
 		function renderAllDrinks(err,drinks){
 			console.log(thisdata);
-			res.render("select",{"tag": "search", "drinks": drinks});
+			res.render("search",{"tag": "search", "drinks": drinks});
 		}
 }
 
