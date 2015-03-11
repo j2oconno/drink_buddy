@@ -30,7 +30,7 @@ exports.view = function(req, res){
 					}
 				}
 				var x = Math.random();
-				console.log(x);
+				// console.log(x);
 			  if(x>0.5){
 			  	res.render("boxes",dTimes);
 			  }else{

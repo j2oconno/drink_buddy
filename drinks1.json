@@ -434,7 +434,7 @@
             "main spirit": [
                 "Jack Daniels"
             ],
-            "time of day": "after 5",
+            "time of day": "after five",
             "image": "/images/jackandcoke.jpg",
             "directions": [
                 {
@@ -456,52 +456,6 @@
                 },
                 {
                     "ingre": "Ice"
-                }
-            ]
-        },
-        {
-            "name": "Between the Sheets",
-            "mood": [
-                "manly"
-            ],
-            "occasions": [
-                "birthday",
-                "new year's eve",
-                "girls night out"
-            ],
-            "main spirit": [
-                "Hennessy VS",
-                "Ten Cane Rum",
-                "Orange Curacao"
-            ],
-            "time of day": "after five",
-            "image": "/images/BetweenTheSheets.jpg",
-            "directions": [
-                {
-                    "dir": "Add all ingredients to shaker tin with Ice"
-                },
-                {
-                    "dir": "Shake until chilled then strain into glass"
-                },
-                {
-                    "dir": "Garnish with Lemon Twist"
-                }
-            ],
-            "ingredients": [
-                {
-                    "ingre": "1oz Hennessy VS or Privilage"
-                },
-                {
-                    "ingre": "1oz Ten Can Rum"
-                },
-                {
-                    "ingre": "1oz Orange Curacao"
-                },
-                {
-                    "ingre": "1/2oz Fresh Lemon Juice"
-                },
-                {
-                    "ingre": "Lemon Twist for Garnish"
                 }
             ]
         },

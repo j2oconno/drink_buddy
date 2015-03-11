@@ -16,7 +16,10 @@
 	</head>
 
   <body>
+
 <!-- NAVIGATION BAR -->
+
+
   <nav class="navbar navbar-default">
     <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -40,14 +43,32 @@
 
 <!-- END NAVIGATION BAR -->
 
-
+<!-- START MENU BOXES-->
 
 <div class="container-fluid square-container center">
       <div><h1 class="MainLogo">DrinkBuddy</h1></div>
       <div><h3 class="ChooseHead">Choose a Recipe:</h3></div>
-<br>
 
-<!-- START MENU BOXES-->
+<br>
+<<<<<<< HEAD
+=======
+      <div class="container button-container">
+        <div class"row button-row">
+          <div class="col-xs-6 col-md-6 col-lg-6">
+            <a href="/favorite" class="btn btn-custom btn-small" style="width:144px; margin-left:-5px">
+              <span class="glyphicon glyphicon-heart" aria-hidden="true">My Favorites</span>
+            </a>
+          </div>
+
+          <div class="col-xs-6 col-md-6 col-lg-6">
+            <a href="/addadrink" class="btn btn-custom btn-small" style="width:144px; margin-left:-5px">
+              <span class="glyphicon glyphicon-plus" aria-hidden="true">Add Drink</span>
+            </a>
+          </div>
+        </div><!-- favorites row-->
+      </div><!--container -->
+>>>>>>> 33acf3fecdd89c1a836e6221b34790629d09516b
+
       <div class="center" class="row"> 
         {{#each by_what}}
           <div class="col-xs-6 col-md-6 col-lg-6">
@@ -57,11 +78,19 @@
                   <div class="overlay center">
                     <div class="square-content">
                         <img src="{{image}}" width="134px" height="134px"/>
+<!--                         <p class="mood-name">{{name}}</p> -->
                     </div>
                   </div>
                 </a>
               </div>
           </div>
+
+<!--         <a href="/{{link}}">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" >
+            <img src="{{image}}" width="180px" height="180px"/>
+              <p class='mood-name'>{{ name }}</p>
+          </div>
+        </a> -->
         {{/each}}
       </div>
 </div>
