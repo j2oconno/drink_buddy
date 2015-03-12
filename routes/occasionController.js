@@ -44,13 +44,7 @@ exports.view = function(req, res){
 					}
 				}
 			}
-				var x = Math.random();
-				// console.log(x);
-			  if(x>0.5){
 			  	res.render("boxes",occAsions);
-			  }else{
-				res.render('boxes_alternate',occAsions);
-			}
 		}
 }
 
