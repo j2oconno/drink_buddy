@@ -35,7 +35,7 @@
          </form>
       
       <ul class="nav navbar-nav navbar-right pull-right" style="padding-right:20px;">
-        <li><a href="login.html" data-rel="dialog" data-transistion="slidedown"> Sign In</a></li>
+        <li><a href="login.html"> Sign In</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -43,14 +43,20 @@
 
 <!-- END NAVIGATION BAR -->
 
+<!-- START MENU BOXES-->
 
 
-<div class="container-fluid square-container center">
-      <div><h1 class="MainLogo">DrinkBuddy</h1></div>
+
+
+
+
+
+
+
+      <div class="center drinkbuddy"><img class= "center img-responsive" src="images/drinkbuddy.jpg"></div>
       <div><h3 class="ChooseHead">Choose a Recipe:</h3></div>
 
 <br>
-<!-- Add to favorites and add a drink button -->
       <div class="container button-container">
         <div class"row button-row">
           <div class="col-xs-6 col-md-6 col-lg-6">
@@ -66,13 +72,13 @@
           </div>
         </div><!-- favorites row-->
       </div><!--container -->
-<!-- START MENU BOXES-->
+
       <div class="center" class="row"> 
         {{#each by_what}}
           <div class="col-xs-6 col-md-6 col-lg-6">
               <div class="square-box">
                 <a href="/{{link}}">
-                  <p style="color:black" style="font-weight: 900" class="mood-name">{{name}}</p>
+                  <p style="color:white; font-weight: 100px  text-align: center centered" class="mood-name">{{name}}</p>
                   <div class="overlay center">
                     <div class="square-content">
                         <img src="{{image}}" width="134px" height="134px"/>
@@ -92,24 +98,8 @@
         {{/each}}
       </div>
 </div>
+
 <!-- END MENU BOXES-->
-
-<!-- favorites row-->
-    <!--   <div class="container button-container">
-        <div class"row button-row">
-          <div class="col-xs-6 col-md-6 col-lg-6">
-            <a href="/favorite" class="btn btn-custom btn-small" style="width:144px; margin-left:-5px">
-              <span class="glyphicon glyphicon-heart" aria-hidden="true">    My Favorites</span>
-            </a>
-          </div>
-
-          <div class="col-xs-6 col-md-6 col-lg-6">
-            <a href="/addadrink" class="btn btn-custom btn-small" style="width:144px; margin-left:-5px">
-              <span class="glyphicon glyphicon-plus" aria-hidden="true">    Add Drink</span>
-            </a>
-          </div>
-        </div>
-      </div> --><!--container -->
 
     <script src="js/jquery-1.11.0.js"></script>
     <script src="js/bootstrap.js"></script>
