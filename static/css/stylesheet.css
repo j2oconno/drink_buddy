@@ -207,7 +207,7 @@ div.overlay {
     height: 95%;
     z-index: 100;
     background:url("../images/black_overlay.png"));
-    opacity: 0.6;
+    opacity: 0.5;
     -moz-opacity:0.60;
     zoom:1;
 }
