@@ -29,13 +29,7 @@ exports.view = function(req, res){
 							dTimes.thing[iiii++]={"name": drinks[i]["time of day"]};
 					}
 				}
-				var x = Math.random();
-				// console.log(x);
-			  if(x>0.5){
 			  	res.render("boxes",dTimes);
-			  }else{
-				res.render('boxes_alternate',dTimes);
-			}
 		}
 }
 
