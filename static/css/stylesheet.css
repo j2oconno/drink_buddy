@@ -120,6 +120,20 @@
     color: #000000;
 }
 
+
+
+.drinkbuddy {
+    position: relative;
+    background: none;
+    margin: 10px;
+    padding:10px;
+}
+
+
+
+
+
+
 td, th {
     display: table-cell;
     vertical-align: inherit;
@@ -171,7 +185,7 @@ ul, menu, dir {
 }
 
 body {
-    background-color: #FFFFFF;
+    background-color: #F8F5EC;
 }
 
 .moodbackground {
@@ -186,9 +200,7 @@ body {
     background-position: center;
 }
 
-.square-container{
-    margin-left:-20px;
-}
+
 
 .square-box{
     position: relative;
@@ -207,7 +219,7 @@ div.overlay {
     height: 95%;
     z-index: 100;
     background:url("../images/black_overlay.png"));
-    opacity: 0.6;
+    opacity: 0.7;
     -moz-opacity:0.60;
     zoom:1;
     border-radius: 4px;
