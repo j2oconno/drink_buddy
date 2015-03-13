@@ -188,7 +188,7 @@ ul, menu, dir {
     color:#96281B;
 }
 
-body {
+.cream-body {
     background-color: #F8F5EC;
 }
 
@@ -347,6 +347,26 @@ div.fave_button{
     padding: 5px; 
     margin: 2px;
 }*/
+
+.btn-red{
+    background-color:#D64541;
+    color:#F8F5EC;
+}
+
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active,
+.btn-red.active,
+.open .dropdown-toggle.btn-red {
+  color: #F8F5EC;
+  background-color: #D64541;
+  border-color: #ac2925;
+}
+
+.btn-green{
+    background-color:#65C6BB;
+    color:#F8F5EC;
+}
 
 .btn-custom {
   background-color: hsl(0, 0%, 79%) !important;

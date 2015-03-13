@@ -12,23 +12,20 @@
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
 
     <!-- Jquery Mobile -->
-<<<<<<< HEAD
     <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
-=======
    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
     <!-- Our css sheet -->
     <link href="css/stylesheet.css" rel="stylesheet">
->>>>>>> 49c05774544e655658c1a2bee5f1186d86991cb1
 
     <title> DrinkBuddy </title>
    {{> tracking_code_script}}
 	</head>
 
-  <body>
+  <body class="cream-body">
 
 <!-- NAVIGATION BAR -->
 
@@ -37,18 +34,18 @@
     <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
      <div class="navbar-header">
-        <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></span><span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home" id="red"></span><span class="sr-only">(current)</span></a>
             <form id="search-bar" class="navbar-form pull-left" role="search" action="/search">
             <div class="input-group">
                <input name= "input" id="input" type="text" class="form-control" placeholder="Search">
                <div class="input-group-btn">
-                  <button id="searchButton" value="Submit" type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                  <button id="searchButton" value="Submit" type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" id="red"></span></button>
                </div>
             </div>
          </form>
       
       <ul class="nav navbar-nav navbar-right pull-right" style="padding-right:20px;">
-        <li><a href="login.html"> Sign In</a></li>
+        <li><a href="login.html" id="red"> Sign In</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -70,17 +67,16 @@
       <div><h3 class="ChooseHead">Choose a Recipe:</h3></div>
 
 <br>
-      <div class="container button-container">
-        <div class"row button-row">
+      <div class="container button-container center">
+        <div class"row button-row center">
           <div class="col-xs-6 col-md-6 col-lg-6">
-            <a href="/favorite" class="btn btn-custom btn-small" style="width:144px; margin-left:-5px">
-              <span class="glyphicon glyphicon-heart" aria-hidden="true" style="padding-right:20px"></span>My Favorites
+              <a href="/favorite" class="btn btn-red btn-small" style="width:85%"><span class="glyphicon glyphicon-heart"></span> My Favorites</a>
             </a>
           </div>
 
           <div class="col-xs-6 col-md-6 col-lg-6">
-            <a href="/addadrink" class="btn btn-custom btn-small" style="width:144px; margin-left:-5px">
-              <span class="glyphicon glyphicon-plus" aria-hidden="true" style="padding-right:20px"></span>Add Drink
+            <a href="/addadrink">
+              <button class="btn btn-green btn-small" style=" width:85%"><span class="glyphicon glyphicon-plus"></span> Add A Drink</button>
             </a>
           </div>
         </div><!-- favorites row-->
