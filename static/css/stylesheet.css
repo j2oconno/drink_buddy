@@ -98,7 +98,7 @@
      background-position: center;
      background-size: 100%;
      position: absolute;
-     z-index: -1;   
+     /*z-index: -1; */  
 }
 
 .jumbotron p{
@@ -120,19 +120,12 @@
     color: #000000;
 }
 
-
-
 .drinkbuddy {
     position: relative;
     background: none;
     margin: 10px;
     padding:10px;
 }
-
-
-
-
-
 
 td, th {
     display: table-cell;
@@ -203,8 +196,6 @@ ul, menu, dir {
     background-size: 100%;
     background-position: center;
 }
-
-
 
 .square-box{
     position: relative;
@@ -404,9 +395,15 @@ div.fave_button{
     background: transparent !important;
 }
 
-.ui-link{
-    color: #777 !important;
-}
+/*.ui-link{
+    color: #F8F5EC !important;
+}*/
 .ui-btn{
-    margin:0 !important;
+    margin:inherit !important;
+    /*background-color: #65C6BB !important;*/
+    /*color: #F8F5EC !important;*/
+}
+
+.ui-page {
+    background: #F8F5EC;
 }

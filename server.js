@@ -70,7 +70,7 @@ app.get("/time%20of%20day/:time/:recipe", timeController.drink);
 
 app.get("/addadrink", add1.showField);
 app.post("/addadrink/add",add1.addDrink);
-
+app.get("/addadrinkgohome", add1.goHome);
 app.get("/search", search.view);
 
 http.createServer(app).listen(app.get('port'), function(){

@@ -9,7 +9,7 @@ exports.view = function(req, res){
 			.exec(renderOccasions);
 			function renderOccasions(err,drinks){
 				if(err) console.log(err);
-				// console.log(drinks);
+				console.log(drinks);
 				var occAsions = {field:"occasion", thing:[]};
 				var dupl = 0;
 				var iiii=1;//index of passing object

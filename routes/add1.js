@@ -5,6 +5,27 @@ exports.showField = function(req,res){
 	res.render("addadrink");
 }
 
+exports.goHome = function(req,res){
+
+	models.Drink
+		.find()
+		.sort()
+		.exec(printDrinks);
+		function printDrinks(err,drinks){
+			// console.log(drinks);
+		}
+	models.Boxes
+		.find()
+		.sort()
+		.exec(renderBoxes);
+
+	function renderBoxes(err, boxes) {
+		// console.log(boxes);
+		res.render('index', {'by_what': boxes});
+	}
+
+}
+
 exports.addDrink = function(req,res){
 	var form_data = req.body;
 	console.log(form_data);
@@ -48,7 +69,7 @@ exports.addDrink = function(req,res){
 	newDrink.save(afterSaving);
 	function afterSaving(err){
 		if(err)console.log(err);
-		console.log(newDrink);
-		res.redirect('addadrink');
+		// console.log(newDrink);
+		res.redirect('/addadrink');
 	}
 }
