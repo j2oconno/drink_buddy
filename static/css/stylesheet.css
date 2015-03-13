@@ -184,6 +184,10 @@ ul, menu, dir {
     background-size: cover;
 }
 
+#red{
+    color:#96281B;
+}
+
 body {
     background-color: #F8F5EC;
 }
