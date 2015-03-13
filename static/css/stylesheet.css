@@ -259,7 +259,7 @@ p.mood-name{
     padding-top:40px;
     padding-left:5px;
     padding-right:10px;
-    text-align: left;
+    text-align: center;
     font-family: FrontBoxFont;
     font-size:16pt;
     z-index:1000;
@@ -271,14 +271,14 @@ p.mood-name{
 }
 
 .boxes {
-    background: rgb(125,126,125); /* Old browsers */
-    background: -moz-linear-gradient(-45deg,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(14,14,14,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(-45deg,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(-45deg,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(-45deg,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* IE10+ */
-    background: linear-gradient(135deg,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background: #91beae; /* Old browsers */
+background: -moz-linear-gradient(top,  #91beae 0%, #91beae 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#91beae), color-stop(100%,#91beae)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #91beae 0%,#91beae 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #91beae 0%,#91beae 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #91beae 0%,#91beae 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #91beae 0%,#91beae 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91beae', endColorstr='#91beae',GradientType=0 ); /* IE6-9 */
 }
 
 .white-container{
@@ -366,4 +366,20 @@ div.fave_button{
   padding: 5px; 
   margin: 5px;
   width: 98%;
+}
+
+.ui-dialog-background {
+    opacity: 0.5;
+    display: block !important;
+    -webkit-transition: opacity 0.5s ease-in;
+}
+
+.ui-dialog-background.pop.in {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease-in;
+}
+
+.ui-dialog {
+    min-height: 100% !important;
+    background: transparent !important;
 }
