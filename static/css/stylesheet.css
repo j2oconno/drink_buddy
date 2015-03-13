@@ -379,3 +379,10 @@ div.fave_button{
     min-height: 100% !important;
     background: transparent !important;
 }
+
+.ui-link{
+    color: #777 !important;
+}
+.ui-btn{
+    margin:0 !important;
+}
