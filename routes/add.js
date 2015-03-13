@@ -1,5 +1,5 @@
 var favorite = require("../favorite.json");
-var drinks = require("../drinks.json");
+var drinks = require("../drinks1.json");
 exports.addFavorite = function(req, res) {   
 
 	// Your code goes here
@@ -13,7 +13,7 @@ exports.addFavorite = function(req, res) { 
 
 exports.showFavorite = function(req, res){
 	var recipe_name_array = favorite["favorites"];
-	var full_recipe_array = drinks["drinks"];
+	var full_recipe_array = drinks;
 
 	var my_favorite_recipe_array = {"drinks" : []};
 
